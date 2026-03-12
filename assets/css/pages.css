@@ -1172,6 +1172,35 @@ body.modal-open {
     box-shadow: 0 26px 70px rgba(0, 0, 0, 0.55);
 }
 
+.people-ai-video-wrap {
+    position: relative;
+}
+
+.people-ai-unmute {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    z-index: 2;
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(0, 0, 0, 0.42);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, opacity 160ms ease;
+}
+
+.people-ai-unmute:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.52);
+    border-color: rgba(247, 183, 51, 0.28);
+}
+
 .people-ai-open {
     display: inline-flex;
     align-items: center;
