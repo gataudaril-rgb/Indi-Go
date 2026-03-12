@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geographic Conditions | IndiGo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+</head>
+
+<body class="geo-background" data-title-en="Geographic Conditions | IndiGo" data-title-id="Kondisi Geografis | IndiGo">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Geographic Hero Image -->
+    <section class="geo-hero">
+        <div class="container hero-content">
+            <h1 class="geo-title" data-aos="zoom-in" data-aos-duration="1200"
+                data-i18n-en="Geographic Conditions" data-i18n-id="Kondisi Geografis">Geographic Conditions</h1>
+        </div>
+    </section>
+
+    <!-- Geographic Main Content (Key facts from ebook) -->
+    <section class="geo-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2 class="month-display" data-i18n-en="Key geographic facts" data-i18n-id="Fakta geografis utama">Key geographic facts</h2>
+            <div class="weather-card" aria-label="Key facts">
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-map"></i></div>
+                    <span class="w-value" data-i18n-en="Area: ±3.28 million km²" data-i18n-id="Luas wilayah: ±3,28 juta km²">Area: ±3.28 million km²</span>
+                </div>
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-compass"></i></div>
+                    <span class="w-value" data-i18n-en="Astronomical: 8°N–37°N, 68°E–97°E" data-i18n-id="Astronomis: 8°LU–37°LU, 68°BT–97°BT">Astronomical: 8°N–37°N, 68°E–97°E</span>
+                </div>
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-road"></i></div>
+                    <span class="w-value" data-i18n-en="Land borders: Pakistan, China, Nepal, Bhutan, Bangladesh, Myanmar"
+                        data-i18n-id="Batas darat: Pakistan, Tiongkok, Nepal, Bhutan, Bangladesh, dan Myanmar">Land borders: Pakistan, China, Nepal, Bhutan, Bangladesh, Myanmar</span>
+                </div>
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-water"></i></div>
+                    <span class="w-value" data-i18n-en="Sea borders: Arabian Sea, Bay of Bengal, Indian Ocean"
+                        data-i18n-id="Batas laut: Laut Arab, Teluk Benggala, Samudra Hindia">Sea borders: Arabian Sea, Bay of Bengal, Indian Ocean</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Geographic Conditions (India) -->
+    <section class="geo-details" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="geo-details-header">
+                <h2 class="geo-details-title">Geographic Conditions of India</h2>
+                <p class="geo-details-subtitle">Click each section to see the full explanation.</p>
+            </div>
+
+            <div class="geo-accordion" id="geoAccordion">
+                <!-- 1) Area and Borders -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="true" aria-controls="geo-panel-1" id="geo-btn-1">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-map"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">1) Area and Borders</span>
+                                <span class="geo-acc-hint">Country size & land/sea borders.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-1" role="region" aria-labelledby="geo-btn-1">
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">Area</h3>
+                                    <p>India covers about ±3.28 million km², making it one of the largest countries in the world.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">Boundaries</h3>
+                                    <ul class="geo-list">
+                                        <li><strong>Land borders:</strong> Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar.</li>
+                                        <li><strong>Sea borders:</strong>
+                                            <ul class="geo-sublist">
+                                                <li><strong>West:</strong> Arabian Sea</li>
+                                                <li><strong>East:</strong> Bay of Bengal</li>
+                                                <li><strong>South:</strong> Indian Ocean</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Airspace boundary:</strong> Adjacent to the airspace of neighboring countries.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2) Location -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-2" id="geo-btn-2">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-compass"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">2) Location</span>
+                                <span class="geo-acc-hint">Geographic, geologic, and astronomical.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-2" role="region" aria-labelledby="geo-btn-2" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">A. Geographic Location</h3>
+                                    <p>India is located in South Asia and forms a peninsula that extends into the Indian Ocean.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">B. Geological Setting</h3>
+                                    <p>India lies at the collision zone between the Indo-Australian Plate and the Eurasian Plate. This formed the Himalayas and makes some regions prone to earthquakes.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">C. Latitude & Longitude</h3>
+                                    <p>India lies between <strong>8°N–37°N</strong> and <strong>68°E–97°E</strong>. Astronomically, this gives India a tropical to subtropical climate range.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3) Landforms -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-3" id="geo-btn-3">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-mountain"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">3) Landforms</span>
+                                <span class="geo-acc-hint">Mountains, plains, and hills.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-3" role="region" aria-labelledby="geo-btn-3" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">A. Mountains and Ranges</h3>
+                                    <p>The Himalayas lie in the north, home to some of the highest mountains in the world.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">B. Hills</h3>
+                                    <p>Hilly regions are common along the Western Ghats and Eastern Ghats.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">C. Plateau</h3>
+                                    <p>The Deccan Plateau spans much of southern and central India.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">D. Lowlands</h3>
+                                    <p>The Indo-Gangetic Plain is a fertile region that supports agriculture and dense settlements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4) Regional Characteristics -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-4" id="geo-btn-4">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-cloud-sun-rain"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">4) Regional Characteristics</span>
+                                <span class="geo-acc-hint">Temperature, seasons, winds, humidity.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-4" role="region" aria-labelledby="geo-btn-4" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">A. Temperature</h3>
+                                    <p>Temperatures range from cold in the mountains to hot in deserts and lowland plains.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">B. Seasons</h3>
+                                    <p>India's climate is strongly influenced by monsoons, creating distinct wet and dry seasons.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">C. Winds</h3>
+                                    <p>The southwest monsoon brings rain, while the northeast monsoon typically brings drier conditions.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">D. Humidity</h3>
+                                    <p>Coastal areas and high-rainfall regions generally have high humidity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5) Demographics -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-5" id="geo-btn-5">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-people-group"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">5) Demographics</span>
+                                <span class="geo-acc-hint">Ethnicity, religion, livelihoods, currency, president.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-5" role="region" aria-labelledby="geo-btn-5" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid geo-info-grid--demo">
+                                <div class="geo-info-card geo-demo-a">
+                                    <h3 class="geo-mini-title">A. Ethnicity / Tribes</h3>
+                                    <p>India is the world's most populous country, with more than <strong>1.47 billion</strong> people in early 2026. Ethnically, India is often described as being dominated by Caucasoid groups (especially the Indid type). India also has very high tribal diversity (Scheduled Tribes), including Bhil, Gond, Santhal, and Mizo.</p>
+                                </div>
+                                <div class="geo-info-card geo-demo-b">
+                                    <h3 class="geo-mini-title">B. Religion</h3>
+                                    <p>The majority of the population practices Hinduism (around 79.8% based on the latest census, and still dominant through 2026), followed by Islam (14.2%), Christianity (2.3%), Sikhism (1.7%), Buddhism, and Jainism.</p>
+                                </div>
+                                <div class="geo-info-card geo-president-card geo-demo-president">
+                                    <span class="geo-president-name-bg" aria-hidden="true">Droupadi Murmu</span>
+                                    <img class="geo-president-portrait" src="/assets/images/president-droupadi-murmu.png"
+                                        alt="Droupadi Murmu" loading="lazy" decoding="async">
+                                    <div class="geo-president-content">
+                                        <div class="geo-president-chip" aria-hidden="true">
+                                            <span class="geo-chip-dot"></span>
+                                            President of India
+                                        </div>
+                                        <h3 class="geo-mini-title">D. President</h3>
+                                        <p>India's current president is <strong>Droupadi Murmu</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="geo-info-card geo-demo-occupation">
+                                    <h3 class="geo-mini-title">E. Livelihoods</h3>
+                                    <p>India has a large agrarian population that depends on agriculture, and it is among the world's leading producers of milk, pulses, and tea. However, the economy is also strongly driven by services (61.5% of GDP) and industry.</p>
+                                </div>
+                                <div class="geo-info-card geo-currency-card geo-demo-currency">
+                                    <span class="geo-currency-mark" aria-hidden="true">₹</span>
+                                    <h3 class="geo-mini-title">C. Currency</h3>
+                                    <p>India's currency is the <strong>Indian Rupee</strong> (<strong>INR</strong>, symbol <strong>₹</strong>).</p>
+                                    <div class="geo-currency-facts" aria-label="Currency quick facts">
+                                        <span class="geo-fact-chip"><i class="fas fa-hashtag"></i> Code: <strong>INR</strong></span>
+                                        <span class="geo-fact-chip"><i class="fas fa-coins"></i> Symbol: <strong>₹</strong></span>
+                                    </div>
+                                    <div class="geo-currency-media" aria-label="Indian Rupee images">
+                                        <img class="geo-currency-img is-front"
+                                            src="/assets/images/mata%20uang%20bagian%20depan.jpg"
+                                            alt="Indian Rupee (front)" loading="lazy" decoding="async">
+                                        <img class="geo-currency-img is-back"
+                                            src="/assets/images/mata%20uang%20bagian%20belakang.jpg"
+                                            alt="Indian Rupee (back)" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer site-footer--minimal">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="footer-mark" href="index.html" aria-label="IndiGo home">
+                    <span class="footer-mark-main">Indi</span><span class="footer-mark-accent">Go</span>
+                </a>
+                <p class="footer-desc" data-i18n-en="Discover the beauty, culture, and vibrant colors of India."
+                    data-i18n-id="Temukan keindahan, budaya, dan warna-warna India yang memukau.">Discover the beauty, culture, and vibrant colors of India.</p>
+
+                <div class="footer-logos" aria-label="Partner logos">
+                    <!-- Replace these two logo images later -->
+                    <a class="footer-logo-card" href="#" aria-label="Logo 1">
+                        <img class="footer-logo-img" src="/assets/images/team-emblem.svg" alt="Logo 1">
+                        <span class="footer-logo-label">Logo 1</span>
+                    </a>
+                    <a class="footer-logo-card" href="#" aria-label="Logo 2">
+                        <img class="footer-logo-img" src="/assets/images/team-emblem.svg" alt="Logo 2">
+                        <span class="footer-logo-label">Logo 2</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n-en="Quick Links" data-i18n-id="Tautan Cepat">Quick Links</h4>
+                <div class="footer-links-grid">
+                    <div class="footer-links-col">
+                        <h5 data-i18n-en="Site" data-i18n-id="Situs">Site</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="geographic.html">Geographic</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h5 data-i18n-en="Explore" data-i18n-id="Jelajah">Explore</h5>
+                        <ul>
+                            <li><a href="destinations.html">Destinations</a></li>
+                            <li><a href="nature.html">Nature</a></li>
+                            <li><a href="culture.html">Culture</a></li>
+                            <li><a href="culinary.html">Culinary</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4 data-i18n-en="Get in Touch" data-i18n-id="Hubungi Kami">Get in Touch</h4>
+                <div class="contact-item"><i class="fas fa-envelope"></i><span>smkclielit@gmail.com</span></div>
+                <div class="contact-item"><i class="fas fa-phone-alt"></i><span>+62 822-4240-0440</span></div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Website"><i class="fas fa-link"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n-en="© 2024 IndiGo. All rights reserved." data-i18n-id="© 2024 IndiGo. Hak cipta dilindungi.">© 2024 IndiGo. All rights reserved.</p>
+            <p class="footer-credit" data-i18n-en="Designed by SMK Metland" data-i18n-id="Didesain oleh SMK Metland">Designed by SMK Metland</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+
+        // (Removed month-by-month demo; this page uses facts from the ebook.)
+        // Accordion: click to expand/collapse (accessible)
+        (function initGeoAccordion() {
+            const acc = document.getElementById('geoAccordion');
+            if (!acc) return;
+            const buttons = Array.from(acc.querySelectorAll('.geo-acc-btn'));
+            if (buttons.length === 0) return;
+
+            function setExpanded(btn, expanded) {
+                const panelId = btn.getAttribute('aria-controls');
+                const panel = panelId ? document.getElementById(panelId) : null;
+                btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                if (!panel) return;
+                const item = btn.closest('.geo-acc-item');
+                if (expanded) {
+                    panel.removeAttribute('hidden');
+                    if (item) item.classList.add('is-open');
+                    panel.style.height = 'auto';
+                    const targetHeight = panel.scrollHeight;
+                    panel.style.height = '0px';
+                    panel.offsetHeight;
+                    panel.style.height = `${targetHeight}px`;
+                    window.clearTimeout(panel.__hideTimer);
+                } else {
+                    if (item) item.classList.remove('is-open');
+                    const currentHeight = panel.scrollHeight;
+                    panel.style.height = `${currentHeight}px`;
+                    panel.offsetHeight;
+                    panel.style.height = '0px';
+                    window.clearTimeout(panel.__hideTimer);
+                    panel.__hideTimer = window.setTimeout(() => {
+                        panel.setAttribute('hidden', '');
+                    }, 420);
+                }
+            }
+
+            function closeAll(exceptBtn) {
+                buttons.forEach((b) => {
+                    if (b !== exceptBtn) setExpanded(b, false);
+                });
+            }
+
+            acc.addEventListener('click', (ev) => {
+                const btn = ev.target.closest('.geo-acc-btn');
+                if (!btn || !acc.contains(btn)) return;
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                if (isExpanded) {
+                    setExpanded(btn, false);
+                    return;
+                }
+                closeAll(btn);
+                setExpanded(btn, true);
+            });
+
+            // Ensure initial state is consistent with markup
+            const initiallyExpanded = buttons.find((b) => b.getAttribute('aria-expanded') === 'true') || buttons[0];
+            buttons.forEach((b) => setExpanded(b, b === initiallyExpanded));
+        })();
+
+        // Wow micro-interaction for President card (tilt + spotlight)
+        (function initPresidentCardFX() {
+            const card = document.querySelector('.geo-president-card');
+            if (!card) return;
+
+            const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (prefersReduced) return;
+
+            function setVars(clientX, clientY) {
+                const rect = card.getBoundingClientRect();
+                const x = Math.min(1, Math.max(0, (clientX - rect.left) / rect.width));
+                const y = Math.min(1, Math.max(0, (clientY - rect.top) / rect.height));
+                const ry = (x - 0.5) * 10; // deg
+                const rx = (0.5 - y) * 7;  // deg
+                card.style.setProperty('--mx', `${x * 100}%`);
+                card.style.setProperty('--my', `${y * 100}%`);
+                card.style.setProperty('--rx', `${rx.toFixed(2)}deg`);
+                card.style.setProperty('--ry', `${ry.toFixed(2)}deg`);
+                card.classList.add('is-hovered');
+            }
+
+            card.addEventListener('pointermove', (e) => setVars(e.clientX, e.clientY));
+            card.addEventListener('pointerenter', (e) => setVars(e.clientX, e.clientY));
+            card.addEventListener('pointerleave', () => {
+                card.classList.remove('is-hovered');
+                card.style.setProperty('--mx', `50%`);
+                card.style.setProperty('--my', `50%`);
+                card.style.setProperty('--rx', `0deg`);
+                card.style.setProperty('--ry', `0deg`);
+            });
+        })();
+
+    </script>
+</body>
+
+</html>
+
+

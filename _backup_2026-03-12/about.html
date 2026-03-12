@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | IndiGo</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+</head>
+
+<body data-title-en="About | IndiGo" data-title-id="Tentang | IndiGo">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" class="active" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Slimmer for About page) -->
+    <section class="about-hero">
+        <div class="container hero-content">
+            <h1 class="hero-title" data-aos="zoom-in" data-aos-duration="1200"
+                data-i18n-en="About" data-i18n-id="Tentang">About</h1>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="about-content">
+        <div class="container">
+
+            <!-- Map Card -->
+            <div class="map-card-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <div class="map-card">
+                    <!-- Interactive Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.799791437!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid"
+                        class="map-img" style="border:0; height: 350px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <h3 class="map-title" data-i18n-en="India's Location" data-i18n-id="Letak India">India's Location</h3>
+                </div>
+            </div>
+
+            <!-- About Text -->
+            <div class="about-text-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h2 class="section-title" data-i18n-en="About India" data-i18n-id="Gambaran Umum India">About India</h2>
+                <div class="about-text">
+                    <p data-i18n-en="India is a country with rich history, culture, and diverse architecture. It is known as one of the centers of ancient civilizations and has many historical legacies from various kingdoms and religions."
+                        data-i18n-id="India adalah negara yang memiliki kekayaan sejarah, budaya, dan arsitektur yang sangat beragam. Negara ini terkenal sebagai salah satu pusat peradaban kuno serta memiliki banyak peninggalan sejarah dari berbagai kerajaan dan agama.">
+                        India is a country with rich history, culture, and diverse architecture. It is known as one of the centers of ancient civilizations and has many historical legacies from various kingdoms and religions.
+                    </p>
+
+                    <p data-i18n-en="Its historic cities are a major attraction for international tourists. Some featured destinations in this project include New Delhi, Mumbai, Agra, and Jaipur."
+                        data-i18n-id="Kota-kota bersejarah di India menjadi daya tarik utama bagi wisatawan mancanegara. Beberapa destinasi unggulan yang dibahas dalam projek ini antara lain: New Delhi (ibu kota), Mumbai, Agra, dan Jaipur.">
+                        Its historic cities are a major attraction for international tourists. Some featured destinations in this project include New Delhi, Mumbai, Agra, and Jaipur.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

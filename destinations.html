@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | IndiGo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+</head>
+
+<body class="page-background" data-title-en="Destinations | IndiGo" data-title-id="Destinasi | IndiGo">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container hero-content">
+            <h1 class="page-title" data-aos="zoom-in" data-aos-duration="1200" data-i18n-en="Destinations" data-i18n-id="Destinasi">
+                Destinations
+            </h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                data-i18n-en="Destinations in Mumbai & Agra (from the ebook)"
+                data-i18n-id="Destinasi di Mumbai & Agra (berdasarkan ebook)">
+                Destinations in Mumbai & Agra (from the ebook)
+            </p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="destinations-shell">
+                <header class="destinations-intro" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="destinations-intro-copy">
+                        <p class="destinations-kicker" data-i18n-en="DESTINATIONS" data-i18n-id="DESTINASI">DESTINATIONS</p>
+                        <h2 class="destinations-heading" data-i18n-en="Short descriptions per destination" data-i18n-id="Penjelasan singkat per destinasi">
+                            Short descriptions per destination
+                        </h2>
+                        <p class="destinations-lede"
+                            data-i18n-en="Click any photo to read a short description about that destination."
+                            data-i18n-id="Klik foto untuk membaca penjelasan singkat tentang destinasi tersebut.">
+                            Click any photo to read a short description about that destination.
+                        </p>
+                    </div>
+                    <div class="destinations-intro-panel" aria-label="Quick stats">
+                        <div class="destinations-stat">
+                            <span class="destinations-stat-value">9</span>
+                            <span class="destinations-stat-label" data-i18n-en="Spots" data-i18n-id="Tempat">Spots</span>
+                        </div>
+                        <div class="destinations-stat">
+                            <span class="destinations-stat-value">Mumbai</span>
+                            <span class="destinations-stat-label" data-i18n-en="City" data-i18n-id="Kota">City</span>
+                        </div>
+                        <div class="destinations-stat">
+                            <span class="destinations-stat-value">Agra</span>
+                            <span class="destinations-stat-label" data-i18n-en="City" data-i18n-id="Kota">City</span>
+                        </div>
+                    </div>
+                </header>
+
+                <nav class="destinations-toc" aria-label="Table of contents" data-aos="fade-up" data-aos-delay="60">
+                    <a class="toc-chip" href="#gateway">Gateway of India</a>
+                    <a class="toc-chip" href="#colaba">Colaba Causeway</a>
+                    <a class="toc-chip" href="#csmvs">CSMVS Museum</a>
+                    <a class="toc-chip" href="#tea-house">Tea House</a>
+                    <a class="toc-chip" href="#pinch">Pinch of Spice</a>
+                    <a class="toc-chip" href="#juhu">Juhu Beach</a>
+                    <a class="toc-chip" href="#taj">Taj Mahal</a>
+                    <a class="toc-chip" href="#mehtab">Mehtab Bagh</a>
+                    <a class="toc-chip" href="#sadar">Sadar Bazaar</a>
+                </nav>
+
+                <div class="destinations-list" aria-label="Destinations list">
+                    <article id="gateway" class="destination" data-aos="fade-up" data-aos-delay="60">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Gateway of India details"
+                                data-title="Gateway of India" data-city="Mumbai" data-img="/assets/images/gatewayofindia.jpeg"
+                                data-desc-en="An iconic waterfront arch monument in South Mumbai, built during the British Raj and now a popular gathering point by the harbour. It’s one of the most photographed spots in Mumbai and a classic starting point for exploring the Colaba area."
+                                data-desc-id="Monumen gerbang ikonik di tepi laut Mumbai Selatan, dibangun pada masa kolonial Britania dan kini menjadi titik kumpul populer di kawasan pelabuhan. Tempat ini juga jadi spot foto paling terkenal di Mumbai dan titik awal yang pas untuk menjelajah kawasan Colaba.">
+                                <img src="/assets/images/gatewayofindia.jpeg" alt="Gateway of India" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Mumbai</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Gateway of India</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="An iconic waterfront arch monument in South Mumbai, built during the British Raj and now a popular gathering point by the harbour. It’s one of the most photographed spots in Mumbai and a classic starting point for exploring the Colaba area."
+                                data-i18n-id="Monumen gerbang ikonik di tepi laut Mumbai Selatan, dibangun pada masa kolonial Britania dan kini menjadi titik kumpul populer di kawasan pelabuhan. Tempat ini juga jadi spot foto paling terkenal di Mumbai dan titik awal yang pas untuk menjelajah kawasan Colaba.">
+                                An iconic waterfront arch monument in South Mumbai, built during the British Raj and now a popular gathering point by the harbour. It’s one of the most photographed spots in Mumbai and a classic starting point for exploring the Colaba area.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="It’s especially lively in the late afternoon—many visitors come for the sea breeze and to capture the skyline from the harbour side."
+                                data-i18n-id="Tempat ini biasanya paling ramai saat sore—banyak yang datang untuk menikmati angin laut dan memotret skyline dari sisi pelabuhan.">
+                                It’s especially lively in the late afternoon—many visitors come for the sea breeze and to capture the skyline from the harbour side.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-landmark"></i><span data-i18n-en="Monument" data-i18n-id="Monumen">Monument</span></li>
+                                <li><i class="fa-solid fa-water"></i><span data-i18n-en="Waterfront" data-i18n-id="Tepi laut">Waterfront</span></li>
+                                <li><i class="fa-solid fa-camera"></i><span data-i18n-en="Photo spot" data-i18n-id="Spot foto">Photo spot</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Monument" data-i18n-id="Monumen">Monument</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Area" data-i18n-id="Area">Area</span><span class="meta-value" data-i18n-en="South Mumbai" data-i18n-id="Mumbai Selatan">South Mumbai</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Best for" data-i18n-id="Cocok untuk">Best for</span><span class="meta-value" data-i18n-en="Harbour views" data-i18n-id="Pemandangan pelabuhan">Harbour views</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="colaba" class="destination destination--reverse" data-aos="fade-up" data-aos-delay="80">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Colaba Causeway details"
+                                data-title="Colaba Causeway" data-city="Mumbai" data-img="/assets/images/colabacauseway.jpeg"
+                                data-desc-en="A lively shopping street in Colaba, South Mumbai, known for street stalls, boutiques, cafés, and bargaining. It’s a fun place to browse accessories, souvenirs, and snacks while feeling the energy of the city."
+                                data-desc-id="Jalan belanja yang ramai di Colaba, Mumbai Selatan, dikenal dengan kios-kios, butik, kafe, dan tawar-menawar. Cocok untuk cari aksesori, suvenir, sampai camilan sambil merasakan suasana kota yang hidup.">
+                                <img src="/assets/images/colabacauseway.jpeg" alt="Colaba Causeway" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Mumbai</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Colaba Causeway</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A lively shopping street in Colaba, South Mumbai, known for street stalls, boutiques, cafés, and bargaining. It’s a fun place to browse accessories, souvenirs, and snacks while feeling the energy of the city."
+                                data-i18n-id="Jalan belanja yang ramai di Colaba, Mumbai Selatan, dikenal dengan kios-kios, butik, kafe, dan tawar-menawar. Cocok untuk cari aksesori, suvenir, sampai camilan sambil merasakan suasana kota yang hidup.">
+                                A lively shopping street in Colaba, South Mumbai, known for street stalls, boutiques, cafés, and bargaining. It’s a fun place to browse accessories, souvenirs, and snacks while feeling the energy of the city.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="If you like street markets, take your time to compare prices and don’t hesitate to bargain politely."
+                                data-i18n-id="Kalau kamu suka street market, santai saja membandingkan harga dan jangan ragu untuk tawar-menawar dengan sopan.">
+                                If you like street markets, take your time to compare prices and don’t hesitate to bargain politely.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-bag-shopping"></i><span data-i18n-en="Shopping street" data-i18n-id="Jalan belanja">Shopping street</span></li>
+                                <li><i class="fa-solid fa-tags"></i><span data-i18n-en="Bargaining" data-i18n-id="Tawar-menawar">Bargaining</span></li>
+                                <li><i class="fa-solid fa-mug-hot"></i><span data-i18n-en="Cafés & snacks" data-i18n-id="Kafe & camilan">Cafés & snacks</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Shopping" data-i18n-id="Belanja">Shopping</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Area" data-i18n-id="Area">Area</span><span class="meta-value" data-i18n-en="Colaba, Mumbai" data-i18n-id="Colaba, Mumbai">Colaba, Mumbai</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Best for" data-i18n-id="Cocok untuk">Best for</span><span class="meta-value" data-i18n-en="Stalls & souvenirs" data-i18n-id="Kios & suvenir">Stalls & souvenirs</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="csmvs" class="destination" data-aos="fade-up" data-aos-delay="100">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open CSMVS details"
+                                data-title="Chhatrapati Shivaji Maharaj Vastu Sangrahalaya" data-city="Mumbai" data-img="/assets/images/chhatrapati.jpeg"
+                                data-desc-en="A major Mumbai museum with art, archaeology, and historical collections (formerly the Prince of Wales Museum). The galleries offer a quick way to learn about India’s heritage through objects, paintings, and exhibits in a landmark building."
+                                data-desc-id="Museum besar di Mumbai dengan koleksi seni, arkeologi, dan sejarah (dulunya Prince of Wales Museum). Galerinya cocok untuk mengenal warisan India lewat benda koleksi, lukisan, dan pameran di bangunan ikonik.">
+                                <img src="/assets/images/chhatrapati.jpeg" alt="CSMVS museum" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Mumbai</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">CSMVS Museum</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A major Mumbai museum with art, archaeology, and historical collections (formerly the Prince of Wales Museum). The galleries offer a quick way to learn about India’s heritage through objects, paintings, and exhibits in a landmark building."
+                                data-i18n-id="Museum besar di Mumbai dengan koleksi seni, arkeologi, dan sejarah (dulunya Prince of Wales Museum). Galerinya cocok untuk mengenal warisan India lewat benda koleksi, lukisan, dan pameran di bangunan ikonik.">
+                                A major Mumbai museum with art, archaeology, and historical collections (formerly the Prince of Wales Museum). The galleries offer a quick way to learn about India’s heritage through objects, paintings, and exhibits in a landmark building.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="It’s a great stop when you want a calmer indoor experience—especially if the weather is hot or rainy."
+                                data-i18n-id="Cocok juga kalau kamu ingin aktivitas indoor yang lebih tenang—terutama saat cuaca panas atau hujan.">
+                                It’s a great stop when you want a calmer indoor experience—especially if the weather is hot or rainy.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-building-columns"></i><span data-i18n-en="Museum" data-i18n-id="Museum">Museum</span></li>
+                                <li><i class="fa-solid fa-palette"></i><span data-i18n-en="Art & history" data-i18n-id="Seni & sejarah">Art & history</span></li>
+                                <li><i class="fa-solid fa-scroll"></i><span data-i18n-en="Collections" data-i18n-id="Koleksi">Collections</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Museum" data-i18n-id="Museum">Museum</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value">Mumbai</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Focus" data-i18n-id="Fokus">Focus</span><span class="meta-value" data-i18n-en="Heritage" data-i18n-id="Warisan">Heritage</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="tea-house" class="destination destination--reverse" data-aos="fade-up" data-aos-delay="120">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Tea House details"
+                                data-title="Brooke Bond Taj Mahal Tea House" data-city="Mumbai" data-img="/assets/images/brooke%20bond%20taj%20mahal%20tea%20house.jpeg"
+                                data-desc-en="A tea house in Bandra (Mumbai) themed around Indian tea culture—an easy stop to relax and enjoy chai. It’s a cozy place to try different tea blends, take photos, and recharge before continuing your city walk."
+                                data-desc-id="Tea house di Bandra (Mumbai) yang bertema budaya teh India—cocok untuk bersantai dan menikmati chai. Tempatnya nyaman untuk coba berbagai varian teh, foto-foto, dan istirahat sebentar sebelum lanjut jalan-jalan.">
+                                <img src="/assets/images/brooke%20bond%20taj%20mahal%20tea%20house.jpeg" alt="Tea House" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Mumbai</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Tea House</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A tea house in Bandra (Mumbai) themed around Indian tea culture—an easy stop to relax and enjoy chai. It’s a cozy place to try different tea blends, take photos, and recharge before continuing your city walk."
+                                data-i18n-id="Tea house di Bandra (Mumbai) yang bertema budaya teh India—cocok untuk bersantai dan menikmati chai. Tempatnya nyaman untuk coba berbagai varian teh, foto-foto, dan istirahat sebentar sebelum lanjut jalan-jalan.">
+                                A tea house in Bandra (Mumbai) themed around Indian tea culture—an easy stop to relax and enjoy chai. It’s a cozy place to try different tea blends, take photos, and recharge before continuing your city walk.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="Perfect for a short break: enjoy a warm drink, sit back, and take a few aesthetic shots of the interior."
+                                data-i18n-id="Pas untuk istirahat sebentar: nikmati minuman hangat, duduk santai, dan ambil beberapa foto estetik di dalamnya.">
+                                Perfect for a short break: enjoy a warm drink, sit back, and take a few aesthetic shots of the interior.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-mug-hot"></i><span data-i18n-en="Tea culture" data-i18n-id="Budaya teh">Tea culture</span></li>
+                                <li><i class="fa-solid fa-couch"></i><span data-i18n-en="Relax spot" data-i18n-id="Tempat santai">Relax spot</span></li>
+                                <li><i class="fa-solid fa-location-dot"></i><span data-i18n-en="Bandra, Mumbai" data-i18n-id="Bandra, Mumbai">Bandra, Mumbai</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Tea house" data-i18n-id="Tea house">Tea house</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value">Mumbai</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Try" data-i18n-id="Coba">Try</span><span class="meta-value" data-i18n-en="Chai" data-i18n-id="Chai">Chai</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="pinch" class="destination" data-aos="fade-up" data-aos-delay="140">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Pinch of Spice details"
+                                data-title="Pinch of Spice" data-city="Agra" data-img="/assets/images/pinchofspice.jpeg"
+                                data-desc-en="A popular restaurant in Agra known for North Indian dishes—often visited for a hearty meal. It’s a comfortable spot to enjoy curries and breads after a day of sightseeing."
+                                data-desc-id="Restoran populer di Agra yang dikenal dengan masakan India Utara—sering dikunjungi untuk makan yang mengenyangkan. Cocok untuk menikmati kari dan aneka roti setelah seharian jalan-jalan.">
+                                <img src="/assets/images/pinchofspice.jpeg" alt="Pinch of Spice" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Agra</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Pinch of Spice</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A popular restaurant in Agra known for North Indian dishes—often visited for a hearty meal. It’s a comfortable spot to enjoy curries and breads after a day of sightseeing."
+                                data-i18n-id="Restoran populer di Agra yang dikenal dengan masakan India Utara—sering dikunjungi untuk makan yang mengenyangkan. Cocok untuk menikmati kari dan aneka roti setelah seharian jalan-jalan.">
+                                A popular restaurant in Agra known for North Indian dishes—often visited for a hearty meal. It’s a comfortable spot to enjoy curries and breads after a day of sightseeing.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="If you want to try something familiar, this is a good place to order classic curry + naan combinations."
+                                data-i18n-id="Kalau mau yang aman dan familiar, ini tempat yang pas untuk pesan kombinasi kari klasik + naan.">
+                                If you want to try something familiar, this is a good place to order classic curry + naan combinations.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-utensils"></i><span data-i18n-en="Restaurant" data-i18n-id="Restoran">Restaurant</span></li>
+                                <li><i class="fa-solid fa-bowl-rice"></i><span data-i18n-en="North Indian" data-i18n-id="India Utara">North Indian</span></li>
+                                <li><i class="fa-solid fa-location-dot"></i><span data-i18n-en="Agra" data-i18n-id="Agra">Agra</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Food" data-i18n-id="Makanan">Food</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value" data-i18n-en="Agra" data-i18n-id="Agra">Agra</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Focus" data-i18n-id="Fokus">Focus</span><span class="meta-value" data-i18n-en="Local flavors" data-i18n-id="Rasa lokal">Local flavors</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="juhu" class="destination destination--reverse" data-aos="fade-up" data-aos-delay="160">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Juhu Beach details"
+                                data-title="Juhu Beach" data-city="Mumbai" data-img="/assets/images/juhubeach.jpeg"
+                                data-desc-en="One of Mumbai’s most famous beaches on the Arabian Sea, popular for sunsets and street food. The promenade gets lively in the evening, with snack stalls and locals enjoying the sea breeze."
+                                data-desc-id="Salah satu pantai paling terkenal di Mumbai di tepi Laut Arab, populer untuk menikmati sunset dan jajanan kaki lima. Saat sore hingga malam biasanya ramai—banyak penjual jajanan dan orang-orang menikmati angin pantai.">
+                                <img src="/assets/images/juhubeach.jpeg" alt="Juhu Beach" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Mumbai</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Juhu Beach</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="One of Mumbai’s most famous beaches on the Arabian Sea, popular for sunsets and street food. The promenade gets lively in the evening, with snack stalls and locals enjoying the sea breeze."
+                                data-i18n-id="Salah satu pantai paling terkenal di Mumbai di tepi Laut Arab, populer untuk menikmati sunset dan jajanan kaki lima. Saat sore hingga malam biasanya ramai—banyak penjual jajanan dan orang-orang menikmati angin pantai.">
+                                One of Mumbai’s most famous beaches on the Arabian Sea, popular for sunsets and street food. The promenade gets lively in the evening, with snack stalls and locals enjoying the sea breeze.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="Come before sunset for the best vibe, and keep an eye on your belongings when the crowd gets dense."
+                                data-i18n-id="Datang sebelum sunset biar vibes-nya dapet, dan tetap jaga barang bawaan saat kondisi ramai.">
+                                Come before sunset for the best vibe, and keep an eye on your belongings when the crowd gets dense.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-umbrella-beach"></i><span data-i18n-en="Beach" data-i18n-id="Pantai">Beach</span></li>
+                                <li><i class="fa-solid fa-sun"></i><span data-i18n-en="Sunset" data-i18n-id="Sunset">Sunset</span></li>
+                                <li><i class="fa-solid fa-burger"></i><span data-i18n-en="Street food" data-i18n-id="Jajanan">Street food</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Beach" data-i18n-id="Pantai">Beach</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value">Mumbai</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Best for" data-i18n-id="Cocok untuk">Best for</span><span class="meta-value" data-i18n-en="Evening walk" data-i18n-id="Jalan sore">Evening walk</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="taj" class="destination" data-aos="fade-up" data-aos-delay="180">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Taj Mahal details"
+                                data-title="Taj Mahal" data-city="Agra" data-img="/assets/images/taj%20mahal.jpeg"
+                                data-desc-en="A 17th-century white marble mausoleum built by Mughal emperor Shah Jahan in memory of Mumtaz Mahal, and a UNESCO World Heritage Site. Known for its symmetry, gardens, and intricate inlay details, it’s one of the most iconic landmarks in India."
+                                data-desc-id="Makam marmer putih abad ke-17 yang dibangun oleh Kaisar Mughal Shah Jahan untuk mengenang Mumtaz Mahal, serta termasuk Situs Warisan Dunia UNESCO. Terkenal dengan bentuk simetris, taman, dan detail ukiran/inlay yang rumit—ini adalah ikon wisata India.">
+                                <img src="/assets/images/taj%20mahal.jpeg" alt="Taj Mahal" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Agra</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Taj Mahal</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A 17th-century white marble mausoleum built by Mughal emperor Shah Jahan in memory of Mumtaz Mahal, and a UNESCO World Heritage Site. Known for its symmetry, gardens, and intricate inlay details, it’s one of the most iconic landmarks in India."
+                                data-i18n-id="Makam marmer putih abad ke-17 yang dibangun oleh Kaisar Mughal Shah Jahan untuk mengenang Mumtaz Mahal, serta termasuk Situs Warisan Dunia UNESCO. Terkenal dengan bentuk simetris, taman, dan detail ukiran/inlay yang rumit—ini adalah ikon wisata India.">
+                                A 17th-century white marble mausoleum built by Mughal emperor Shah Jahan in memory of Mumtaz Mahal, and a UNESCO World Heritage Site. Known for its symmetry, gardens, and intricate inlay details, it’s one of the most iconic landmarks in India.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="Many people visit early to avoid crowds and to see the marble glow softly in the morning light."
+                                data-i18n-id="Banyak orang datang lebih pagi untuk menghindari keramaian dan melihat marmernya terlihat lembut saat cahaya pagi.">
+                                Many people visit early to avoid crowds and to see the marble glow softly in the morning light.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-landmark"></i><span data-i18n-en="Mausoleum" data-i18n-id="Mausoleum">Mausoleum</span></li>
+                                <li><i class="fa-solid fa-gem"></i><span data-i18n-en="White marble" data-i18n-id="Marmer putih">White marble</span></li>
+                                <li><i class="fa-solid fa-award"></i><span data-i18n-en="UNESCO" data-i18n-id="UNESCO">UNESCO</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Heritage" data-i18n-id="Warisan">Heritage</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value">Agra</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Built" data-i18n-id="Dibangun">Built</span><span class="meta-value" data-i18n-en="17th century" data-i18n-id="Abad ke-17">17th century</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="mehtab" class="destination destination--reverse" data-aos="fade-up" data-aos-delay="200">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Mehtab Bagh details"
+                                data-title="Mehtab Bagh" data-city="Agra" data-img="/assets/images/mehtabbagh.jpeg"
+                                data-desc-en="A Mughal-era charbagh garden across the Yamuna River, known for scenic views of the Taj Mahal. Many visitors come here for a calmer viewpoint—especially around golden hour—before heading back into the city."
+                                data-desc-id="Taman charbagh peninggalan era Mughal di seberang Sungai Yamuna, terkenal dengan pemandangan Taj Mahal. Banyak orang datang ke sini untuk spot yang lebih tenang—terutama saat golden hour—sebelum kembali ke pusat kota.">
+                                <img src="/assets/images/mehtabbagh.jpeg" alt="Mehtab Bagh" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Agra</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Mehtab Bagh</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A Mughal-era charbagh garden across the Yamuna River, known for scenic views of the Taj Mahal. Many visitors come here for a calmer viewpoint—especially around golden hour—before heading back into the city."
+                                data-i18n-id="Taman charbagh peninggalan era Mughal di seberang Sungai Yamuna, terkenal dengan pemandangan Taj Mahal. Banyak orang datang ke sini untuk spot yang lebih tenang—terutama saat golden hour—sebelum kembali ke pusat kota.">
+                                A Mughal-era charbagh garden across the Yamuna River, known for scenic views of the Taj Mahal. Many visitors come here for a calmer viewpoint—especially around golden hour—before heading back into the city.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="Compared to the main complex, the atmosphere here feels quieter—great if you want slow sightseeing and scenic photos."
+                                data-i18n-id="Dibanding kompleks utamanya, suasananya lebih tenang—cocok untuk jalan santai dan foto pemandangan.">
+                                Compared to the main complex, the atmosphere here feels quieter—great if you want slow sightseeing and scenic photos.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-tree"></i><span data-i18n-en="Garden" data-i18n-id="Taman">Garden</span></li>
+                                <li><i class="fa-solid fa-water"></i><span data-i18n-en="Across the Yamuna" data-i18n-id="Seberang Yamuna">Across the Yamuna</span></li>
+                                <li><i class="fa-solid fa-binoculars"></i><span data-i18n-en="Taj view" data-i18n-id="View Taj">Taj view</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Garden" data-i18n-id="Taman">Garden</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value">Agra</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Best for" data-i18n-id="Cocok untuk">Best for</span><span class="meta-value" data-i18n-en="Scenic photos" data-i18n-id="Foto pemandangan">Scenic photos</span></div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="sadar" class="destination" data-aos="fade-up" data-aos-delay="220">
+                        <div class="destination-media">
+                            <button class="destination-media-btn dest-open-btn" type="button" aria-label="Open Sadar Bazaar details"
+                                data-title="Sadar Bazaar" data-city="Agra" data-img="/assets/images/sadarbazaar.jpeg"
+                                data-desc-en="A busy market area in Agra for shopping local goods and souvenirs—expect crowds and bargaining. It’s a classic place to grab small gifts, browse local products, and experience the lively street atmosphere."
+                                data-desc-id="Kawasan pasar yang ramai di Agra untuk belanja barang lokal dan suvenir—siap-siap ramai dan tawar-menawar. Cocok untuk cari oleh-oleh, lihat produk lokal, dan merasakan suasana jalanan yang hidup.">
+                                <img src="/assets/images/sadarbazaar.jpeg" alt="Sadar Bazaar" loading="lazy" decoding="async">
+                            </button>
+                            <span class="destination-badge">Agra</span>
+                        </div>
+                        <div class="destination-body">
+                            <h3 class="destination-title">Sadar Bazaar</h3>
+                            <p class="destination-lead"
+                                data-i18n-en="A busy market area in Agra for shopping local goods and souvenirs—expect crowds and bargaining. It’s a classic place to grab small gifts, browse local products, and experience the lively street atmosphere."
+                                data-i18n-id="Kawasan pasar yang ramai di Agra untuk belanja barang lokal dan suvenir—siap-siap ramai dan tawar-menawar. Cocok untuk cari oleh-oleh, lihat produk lokal, dan merasakan suasana jalanan yang hidup.">
+                                A busy market area in Agra for shopping local goods and souvenirs—expect crowds and bargaining. It’s a classic place to grab small gifts, browse local products, and experience the lively street atmosphere.
+                            </p>
+                            <p class="destination-more"
+                                data-i18n-en="Walk slowly, keep your valuables safe, and enjoy the buzz—this is where you can feel the city’s everyday rhythm."
+                                data-i18n-id="Jalan pelan-pelan, jaga barang berharga, dan nikmati keramaiannya—di sinilah kamu bisa merasakan ritme keseharian kota.">
+                                Walk slowly, keep your valuables safe, and enjoy the buzz—this is where you can feel the city’s everyday rhythm.
+                            </p>
+                            <ul class="destination-highlights" aria-label="Highlights">
+                                <li><i class="fa-solid fa-bag-shopping"></i><span data-i18n-en="Market" data-i18n-id="Pasar">Market</span></li>
+                                <li><i class="fa-solid fa-tags"></i><span data-i18n-en="Bargaining" data-i18n-id="Tawar-menawar">Bargaining</span></li>
+                                <li><i class="fa-solid fa-gift"></i><span data-i18n-en="Souvenirs" data-i18n-id="Oleh-oleh">Souvenirs</span></li>
+                            </ul>
+                            <div class="destination-meta" aria-label="Quick info">
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Category" data-i18n-id="Kategori">Category</span><span class="meta-value" data-i18n-en="Market" data-i18n-id="Pasar">Market</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="City" data-i18n-id="Kota">City</span><span class="meta-value">Agra</span></div>
+                                <div class="meta-item"><span class="meta-label" data-i18n-en="Tip" data-i18n-id="Tips">Tip</span><span class="meta-value" data-i18n-en="Ask the price first" data-i18n-id="Tanya harga dulu">Ask the price first</span></div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="dest-modal" class="dest-modal" aria-hidden="true">
+        <div class="dest-modal__backdrop" data-close aria-hidden="true"></div>
+        <div class="dest-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="dest-modal-title">
+            <button class="dest-modal__close" type="button" data-close aria-label="Close dialog">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="dest-modal__media">
+                <img class="dest-modal__img" src="" alt="" loading="lazy" decoding="async">
+            </div>
+            <div class="dest-modal__content">
+                <p id="dest-modal-kicker" class="dest-modal__kicker"></p>
+                <h3 id="dest-modal-title" class="dest-modal__title"></h3>
+                <p id="dest-modal-desc" class="dest-modal__desc"></p>
+                <p class="dest-modal__hint" data-i18n-en="Tap outside to close" data-i18n-id="Ketuk area luar untuk menutup">Tap outside to close</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer site-footer--minimal">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="footer-mark" href="index.html" aria-label="IndiGo home">
+                    <span class="footer-mark-main">Indi</span><span class="footer-mark-accent">Go</span>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n-en="© 2026 IndiGo. All rights reserved." data-i18n-id="© 2026 IndiGo. Hak cipta dilindungi.">© 2026 IndiGo. All rights reserved.</p>
+                <p class="footer-credit" data-i18n-en="Designed by SMK Metland" data-i18n-id="Didesain oleh SMK Metland">Designed by SMK Metland</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+
+        (() => {
+            const modal = document.getElementById('dest-modal');
+            if (!modal) return;
+
+            const modalImg = modal.querySelector('.dest-modal__img');
+            const modalKicker = document.getElementById('dest-modal-kicker');
+            const modalTitle = document.getElementById('dest-modal-title');
+            const modalDesc = document.getElementById('dest-modal-desc');
+
+            let lastActive = null;
+
+            const open = (payload, sourceEl) => {
+                lastActive = sourceEl || null;
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('modal-open');
+
+                modalImg.src = payload.img || '';
+                modalImg.alt = payload.title ? `Image of ${payload.title}` : 'Image';
+                modalKicker.textContent = payload.kicker || '';
+                modalTitle.textContent = payload.title || '';
+                modalDesc.textContent = payload.desc || '';
+
+                const closeBtn = modal.querySelector('[data-close]');
+                closeBtn?.focus?.();
+            };
+
+            const close = () => {
+                modal.classList.remove('is-open');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('modal-open');
+                modalImg.src = '';
+                lastActive?.focus?.();
+            };
+
+            const getLang = () => (document.documentElement.dataset.lang === 'id' ? 'id' : 'en');
+
+            document.querySelectorAll('.dest-open-btn').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const lang = getLang();
+                    const descAttr = lang === 'id' ? 'data-desc-id' : 'data-desc-en';
+                    open({
+                        kicker: btn.getAttribute('data-city') || '',
+                        title: btn.getAttribute('data-title') || '',
+                        img: btn.getAttribute('data-img') || '',
+                        desc: btn.getAttribute(descAttr) || btn.getAttribute('data-desc') || ''
+                    }, btn);
+                });
+            });
+
+            modal.querySelectorAll('[data-close]').forEach((el) => el.addEventListener('click', close));
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+            });
+        })();
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geographic Conditions | IndiGo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+    <style>
+        .month-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+    </style>
+</head>
+
+<body class="geo-background" data-title-en="Geographic Conditions | IndiGo" data-title-id="Kondisi Geografis | IndiGo">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Geographic Hero Image -->
+    <section class="geo-hero">
+        <div class="container hero-content">
+            <h1 class="geo-title" data-aos="zoom-in" data-aos-duration="1200"
+                data-i18n-en="Geographic Conditions" data-i18n-id="Kondisi Geografis">Geographic Conditions</h1>
+        </div>
+    </section>
+
+    <!-- Geographic Main Content (calendar) -->
+    <section class="geo-content" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="month-buttons" aria-label="Month selector">
+                <button class="month-btn" type="button" data-month="jan">JAN</button>
+                <button class="month-btn" type="button" data-month="feb">FEB</button>
+                <button class="month-btn" type="button" data-month="mar">MAR</button>
+                <button class="month-btn" type="button" data-month="apr">APR</button>
+                <button class="month-btn" type="button" data-month="may">MAY</button>
+                <button class="month-btn" type="button" data-month="jun">JUN</button>
+                <button class="month-btn" type="button" data-month="jul">JUL</button>
+                <button class="month-btn" type="button" data-month="aug">AUG</button>
+                <button class="month-btn" type="button" data-month="sep">SEP</button>
+                <button class="month-btn" type="button" data-month="oct">OCT</button>
+                <button class="month-btn" type="button" data-month="nov">NOV</button>
+                <button class="month-btn" type="button" data-month="dec">DEC</button>
+            </div>
+
+            <h2 id="monthDisplay" class="month-display">January</h2>
+
+            <div id="weatherCard" class="weather-card" aria-label="Weather overview">
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-temperature-high"></i></div>
+                    <span id="wTemp" class="w-value">—</span>
+                </div>
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+                    <span id="wSeason" class="w-value">—</span>
+                </div>
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-wind"></i></div>
+                    <span id="wWind" class="w-value">—</span>
+                </div>
+                <div class="weather-item">
+                    <div class="w-icon"><i class="fas fa-droplet"></i></div>
+                    <span id="wHumidity" class="w-value">—</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Geographic Conditions (India) -->
+    <section class="geo-details" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <div class="geo-details-header">
+                <h2 class="geo-details-title">Geographic Conditions of India</h2>
+                <p class="geo-details-subtitle">Click each section to see the full explanation.</p>
+            </div>
+
+            <div class="geo-accordion" id="geoAccordion">
+                <!-- 1) Area and Borders -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="true" aria-controls="geo-panel-1" id="geo-btn-1">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-map"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">1) Area and Borders</span>
+                                <span class="geo-acc-hint">Country size & land/sea borders.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-1" role="region" aria-labelledby="geo-btn-1">
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">Area</h3>
+                                    <p>India covers about ±3.28 million km², making it one of the largest countries in the world.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">Boundaries</h3>
+                                    <ul class="geo-list">
+                                        <li><strong>Land borders:</strong> Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar.</li>
+                                        <li><strong>Sea borders:</strong>
+                                            <ul class="geo-sublist">
+                                                <li><strong>West:</strong> Arabian Sea</li>
+                                                <li><strong>East:</strong> Bay of Bengal</li>
+                                                <li><strong>South:</strong> Indian Ocean</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Airspace boundary:</strong> Adjacent to the airspace of neighboring countries.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2) Location -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-2" id="geo-btn-2">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-compass"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">2) Location</span>
+                                <span class="geo-acc-hint">Geographic, geologic, and astronomical.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-2" role="region" aria-labelledby="geo-btn-2" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">A. Geographic Location</h3>
+                                    <p>India is located in South Asia and forms a peninsula that extends into the Indian Ocean.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">B. Geological Setting</h3>
+                                    <p>India lies at the collision zone between the Indo-Australian Plate and the Eurasian Plate. This formed the Himalayas and makes some regions prone to earthquakes.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">C. Latitude & Longitude</h3>
+                                    <p>India lies between <strong>8°N–37°N</strong> and <strong>68°E–97°E</strong>. Astronomically, this gives India a tropical to subtropical climate range.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3) Landforms -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-3" id="geo-btn-3">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-mountain"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">3) Landforms</span>
+                                <span class="geo-acc-hint">Mountains, plains, and hills.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-3" role="region" aria-labelledby="geo-btn-3" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">A. Mountains and Ranges</h3>
+                                    <p>The Himalayas lie in the north, home to some of the highest mountains in the world.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">B. Hills</h3>
+                                    <p>Hilly regions are common along the Western Ghats and Eastern Ghats.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">C. Plateau</h3>
+                                    <p>The Deccan Plateau spans much of southern and central India.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">D. Lowlands</h3>
+                                    <p>The Indo-Gangetic Plain is a fertile region that supports agriculture and dense settlements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4) Regional Characteristics -->
+                <div class="geo-acc-item">
+                    <button class="geo-acc-btn" type="button" aria-expanded="false" aria-controls="geo-panel-4" id="geo-btn-4">
+                        <span class="geo-acc-left">
+                            <span class="geo-acc-icon"><i class="fas fa-cloud-sun-rain"></i></span>
+                            <span class="geo-acc-text">
+                                <span class="geo-acc-title">4) Regional Characteristics</span>
+                                <span class="geo-acc-hint">Temperature, seasons, winds, humidity.</span>
+                            </span>
+                        </span>
+                        <span class="geo-acc-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="geo-acc-panel" id="geo-panel-4" role="region" aria-labelledby="geo-btn-4" hidden>
+                        <div class="geo-acc-body">
+                            <div class="geo-info-grid">
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">A. Temperature</h3>
+                                    <p>Temperatures range from cold in the mountains to hot in deserts and lowland plains.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">B. Seasons</h3>
+                                    <p>India's climate is strongly influenced by monsoons, creating distinct wet and dry seasons.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">C. Winds</h3>
+                                    <p>The southwest monsoon brings rain, while the northeast monsoon typically brings drier conditions.</p>
+                                </div>
+                                <div class="geo-info-card">
+                                    <h3 class="geo-mini-title">D. Humidity</h3>
+                                    <p>Coastal areas and high-rainfall regions generally have high humidity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer site-footer--minimal">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="footer-mark" href="index.html" aria-label="IndiGo home">
+                    <span class="footer-mark-main">Indi</span><span class="footer-mark-accent">Go</span>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n-en="© 2026 IndiGo. All rights reserved." data-i18n-id="© 2026 IndiGo. Hak cipta dilindungi.">© 2026 IndiGo. All rights reserved.</p>
+                <p class="footer-credit" data-i18n-en="Designed by SMK Metland" data-i18n-id="Didesain oleh SMK Metland">Designed by SMK Metland</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+
+        // Month calendar (simple overview)
+        (function initMonthCalendar() {
+            const monthDisplay = document.getElementById('monthDisplay');
+            const weatherCard = document.getElementById('weatherCard');
+            const wTemp = document.getElementById('wTemp');
+            const wSeason = document.getElementById('wSeason');
+            const wWind = document.getElementById('wWind');
+            const wHumidity = document.getElementById('wHumidity');
+            const buttons = Array.from(document.querySelectorAll('.month-btn[data-month]'));
+            if (!monthDisplay || !weatherCard || !wTemp || !wSeason || !wWind || !wHumidity || buttons.length === 0) return;
+
+            const data = {
+                jan: {
+                    name: { en: 'January', id: 'Januari' },
+                    temp: { en: 'Cool (winter)', id: 'Sejuk (musim dingin)' },
+                    season: { en: 'Dry season', id: 'Musim kering' },
+                    wind: { en: 'Northeast winds', id: 'Angin timur laut' },
+                    humidity: { en: 'Moderate', id: 'Sedang' }
+                },
+                feb: {
+                    name: { en: 'February', id: 'Februari' },
+                    temp: { en: 'Cool → warm', id: 'Sejuk → hangat' },
+                    season: { en: 'Dry season', id: 'Musim kering' },
+                    wind: { en: 'Northeast winds', id: 'Angin timur laut' },
+                    humidity: { en: 'Moderate', id: 'Sedang' }
+                },
+                mar: {
+                    name: { en: 'March', id: 'Maret' },
+                    temp: { en: 'Warm (pre-monsoon)', id: 'Hangat (pra-monsun)' },
+                    season: { en: 'Transition', id: 'Peralihan' },
+                    wind: { en: 'Variable winds', id: 'Angin bervariasi' },
+                    humidity: { en: 'Low–moderate', id: 'Rendah–sedang' }
+                },
+                apr: {
+                    name: { en: 'April', id: 'April' },
+                    temp: { en: 'Hot', id: 'Panas' },
+                    season: { en: 'Summer', id: 'Musim panas' },
+                    wind: { en: 'Hot, dry winds', id: 'Angin panas & kering' },
+                    humidity: { en: 'Low', id: 'Rendah' }
+                },
+                may: {
+                    name: { en: 'May', id: 'Mei' },
+                    temp: { en: 'Very hot', id: 'Sangat panas' },
+                    season: { en: 'Summer (peak)', id: 'Puncak musim panas' },
+                    wind: { en: 'Dry winds', id: 'Angin kering' },
+                    humidity: { en: 'Low–moderate', id: 'Rendah–sedang' }
+                },
+                jun: {
+                    name: { en: 'June', id: 'Juni' },
+                    temp: { en: 'Warm (rain starts)', id: 'Hangat (awal hujan)' },
+                    season: { en: 'Monsoon begins', id: 'Awal musim hujan (monsun)' },
+                    wind: { en: 'Southwest monsoon', id: 'Monsun barat daya' },
+                    humidity: { en: 'High', id: 'Tinggi' }
+                },
+                jul: {
+                    name: { en: 'July', id: 'Juli' },
+                    temp: { en: 'Warm', id: 'Hangat' },
+                    season: { en: 'Monsoon', id: 'Musim hujan (monsun)' },
+                    wind: { en: 'Southwest monsoon', id: 'Monsun barat daya' },
+                    humidity: { en: 'Very high', id: 'Sangat tinggi' }
+                },
+                aug: {
+                    name: { en: 'August', id: 'Agustus' },
+                    temp: { en: 'Warm', id: 'Hangat' },
+                    season: { en: 'Monsoon', id: 'Musim hujan (monsun)' },
+                    wind: { en: 'Southwest monsoon', id: 'Monsun barat daya' },
+                    humidity: { en: 'Very high', id: 'Sangat tinggi' }
+                },
+                sep: {
+                    name: { en: 'September', id: 'September' },
+                    temp: { en: 'Warm', id: 'Hangat' },
+                    season: { en: 'Monsoon (end)', id: 'Akhir musim hujan (monsun)' },
+                    wind: { en: 'Monsoon winds', id: 'Angin monsun' },
+                    humidity: { en: 'High', id: 'Tinggi' }
+                },
+                oct: {
+                    name: { en: 'October', id: 'Oktober' },
+                    temp: { en: 'Warm → cool', id: 'Hangat → sejuk' },
+                    season: { en: 'Post-monsoon', id: 'Pasca-monsun' },
+                    wind: { en: 'Northeast winds', id: 'Angin timur laut' },
+                    humidity: { en: 'Moderate–high', id: 'Sedang–tinggi' }
+                },
+                nov: {
+                    name: { en: 'November', id: 'November' },
+                    temp: { en: 'Cool', id: 'Sejuk' },
+                    season: { en: 'Dry season', id: 'Musim kering' },
+                    wind: { en: 'Northeast winds', id: 'Angin timur laut' },
+                    humidity: { en: 'Moderate', id: 'Sedang' }
+                },
+                dec: {
+                    name: { en: 'December', id: 'Desember' },
+                    temp: { en: 'Cool (winter)', id: 'Sejuk (musim dingin)' },
+                    season: { en: 'Dry season', id: 'Musim kering' },
+                    wind: { en: 'Northeast winds', id: 'Angin timur laut' },
+                    humidity: { en: 'Moderate', id: 'Sedang' }
+                }
+            };
+
+            const getLang = () => (document.documentElement.dataset.lang === 'id' ? 'id' : 'en');
+
+            const setActiveBtn = (key) => {
+                buttons.forEach((b) => b.classList.toggle('active', b.dataset.month === key));
+            };
+
+            const flash = () => {
+                weatherCard.classList.add('flash');
+                window.clearTimeout(weatherCard.__flashTimer);
+                weatherCard.__flashTimer = window.setTimeout(() => weatherCard.classList.remove('flash'), 240);
+            };
+
+            const render = (key) => {
+                const lang = getLang();
+                const row = data[key] || data.jan;
+                monthDisplay.textContent = row.name[lang];
+                wTemp.textContent = row.temp[lang];
+                wSeason.textContent = row.season[lang];
+                wWind.textContent = row.wind[lang];
+                wHumidity.textContent = row.humidity[lang];
+                setActiveBtn(key);
+                flash();
+            };
+
+            buttons.forEach((btn) => btn.addEventListener('click', () => render(btn.dataset.month)));
+
+            const now = new Date();
+            const keyByIndex = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+            render(keyByIndex[now.getMonth()] || 'jan');
+
+            window.addEventListener('indigo:lang', () => {
+                const active = buttons.find((b) => b.classList.contains('active'))?.dataset.month || 'jan';
+                render(active);
+            });
+        })();
+
+        // Accordion: click to expand/collapse (accessible)
+        (function initGeoAccordion() {
+            const acc = document.getElementById('geoAccordion');
+            if (!acc) return;
+            const buttons = Array.from(acc.querySelectorAll('.geo-acc-btn'));
+            if (buttons.length === 0) return;
+
+            function setExpanded(btn, expanded) {
+                const panelId = btn.getAttribute('aria-controls');
+                const panel = panelId ? document.getElementById(panelId) : null;
+                btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+                if (!panel) return;
+                const item = btn.closest('.geo-acc-item');
+                if (expanded) {
+                    panel.removeAttribute('hidden');
+                    if (item) item.classList.add('is-open');
+                    panel.style.height = 'auto';
+                    const targetHeight = panel.scrollHeight;
+                    panel.style.height = '0px';
+                    panel.offsetHeight;
+                    panel.style.height = `${targetHeight}px`;
+                    window.clearTimeout(panel.__hideTimer);
+                } else {
+                    if (item) item.classList.remove('is-open');
+                    const currentHeight = panel.scrollHeight;
+                    panel.style.height = `${currentHeight}px`;
+                    panel.offsetHeight;
+                    panel.style.height = '0px';
+                    window.clearTimeout(panel.__hideTimer);
+                    panel.__hideTimer = window.setTimeout(() => {
+                        panel.setAttribute('hidden', '');
+                    }, 420);
+                }
+            }
+
+            function closeAll(exceptBtn) {
+                buttons.forEach((b) => {
+                    if (b !== exceptBtn) setExpanded(b, false);
+                });
+            }
+
+            acc.addEventListener('click', (ev) => {
+                const btn = ev.target.closest('.geo-acc-btn');
+                if (!btn || !acc.contains(btn)) return;
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                if (isExpanded) {
+                    setExpanded(btn, false);
+                    return;
+                }
+                closeAll(btn);
+                setExpanded(btn, true);
+            });
+
+            // Ensure initial state is consistent with markup
+            const initiallyExpanded = buttons.find((b) => b.getAttribute('aria-expanded') === 'true') || buttons[0];
+            buttons.forEach((b) => setExpanded(b, b === initiallyExpanded));
+        })();
+
+    </script>
+</body>
+
+</html>
+
+

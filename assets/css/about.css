@@ -1,0 +1,381 @@
+/* About Page CSS */
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Using the new background image provided */
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 70%, #E8E8ED 100%),
+        url('../images/gatewayofindia.jpeg') center/cover no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.about-hero .hero-title {
+    font-size: 72px;
+}
+
+/* Page Content Area */
+.about-content {
+    background: var(--bg-gradient);
+    /* Keep the premium gradient */
+    padding-bottom: 100px;
+    margin-top: -80px;
+    /* Pull the map over the hero edge */
+    position: relative;
+    z-index: 10;
+}
+
+/* Map Card Container */
+.map-card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.map-card {
+    background: var(--text-light);
+    border-radius: var(--radius-lg);
+    padding: 15px;
+    box-shadow: var(--shadow-hover);
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.map-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Subtle border around map */
+}
+
+/* Specific Style for the Map Title matching the image (Black bold text) */
+.map-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+/* About India Heading */
+.about-text-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: transparent;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 40px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Adding the distinct black outline shown in design */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Text Paragraphs */
+.about-text {
+    text-align: center;
+    /* Matching the centered text style in the image */
+}
+
+.about-text p {
+    font-size: 16px;
+    font-weight: 800;
+    /* Bolder text exactly as shown in the screenshot */
+    line-height: 1.8;
+    color: #000000;
+    /* Solid black as in image */
+    margin-bottom: 25px;
+}
+
+.about-points {
+    list-style: none;
+    margin: 18px auto 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 820px;
+}
+
+.about-points li {
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    color: rgba(0, 0, 0, 0.82);
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: 40vh;
+    }
+
+    .about-hero .hero-title {
+        font-size: 50px;
+    }
+
+    .map-title {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        text-align: left;
+        /* Better left align on small phones */
+    }
+
+    .about-points {
+        justify-content: flex-start;
+    }
+}
+
+/* President card (interactive, based on Geographic page) */
+.geo-info-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-content .geo-president-card {
+    width: 100%;
+    max-width: 980px;
+}
+
+.geo-mini-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.geo-info-card p {
+    font-size: 13px;
+    line-height: 1.75;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+}
+
+.geo-president-card {
+    padding: 18px 18px 20px;
+    min-height: 520px;
+    transform-style: preserve-3d;
+    --mx: 50%;
+    --my: 50%;
+    --rx: 0deg;
+    --ry: 0deg;
+    isolation: isolate;
+    overflow: hidden;
+    background:
+        radial-gradient(120% 120% at var(--mx) var(--my), rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.78) 55%, rgba(255, 255, 255, 0.68) 100%);
+    transition: transform 500ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 450ms ease, border-color 350ms ease;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.geo-president-card.is-hovered {
+    transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-3px);
+}
+
+.geo-president-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(252, 74, 26, 0.85), rgba(247, 183, 51, 0.85), rgba(120, 219, 226, 0.65));
+    opacity: 0.55;
+    filter: blur(10px);
+    transform: translateZ(-1px);
+    transition: opacity 350ms ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.geo-president-card:hover::before {
+    opacity: 0.9;
+}
+
+.geo-president-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(closest-side at 80% 70%, rgba(247, 183, 51, 0.26), transparent 65%),
+        radial-gradient(closest-side at 18% 18%, rgba(252, 74, 26, 0.14), transparent 56%),
+        radial-gradient(closest-side at 55% 110%, rgba(120, 219, 226, 0.14), transparent 55%);
+    opacity: 0.95;
+    animation: geoGlowDrift 8s ease-in-out infinite alternate;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes geoGlowDrift {
+    from {
+        transform: translate3d(-8px, 6px, 0) scale(1);
+        filter: saturate(1);
+    }
+
+    to {
+        transform: translate3d(8px, -6px, 0) scale(1.03);
+        filter: saturate(1.12);
+    }
+}
+
+.geo-president-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.72);
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    margin-bottom: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.geo-chip-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    box-shadow: 0 8px 14px rgba(247, 183, 51, 0.35);
+}
+
+.geo-president-content {
+    position: relative;
+    z-index: 4;
+    max-width: 50%;
+}
+
+.geo-president-name-bg {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: 60%;
+    z-index: 2;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: clamp(44px, 5.2vw, 82px);
+    line-height: 0.95;
+    opacity: 0.13;
+    color: #000;
+    white-space: nowrap;
+    transform: translateY(-50%) rotate(-6deg);
+    transition: opacity 280ms ease, transform 380ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    mix-blend-mode: multiply;
+    text-shadow: 0 18px 28px rgba(0, 0, 0, 0.10);
+}
+
+.geo-president-portrait {
+    position: absolute;
+    right: 8px;
+    bottom: -64px;
+    z-index: 3;
+    width: min(520px, 72%);
+    height: 560px;
+    object-fit: contain;
+    object-position: right bottom;
+    pointer-events: none;
+    opacity: 0.98;
+    filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.18));
+    transform: translateZ(14px) scale(1.02);
+    transition: transform 520ms cubic-bezier(0.2, 0.8, 0.2, 1), opacity 320ms ease;
+}
+
+.geo-president-card:hover .geo-president-portrait {
+    transform: translateZ(18px) scale(1.06) translateY(-6px);
+}
+
+.geo-president-card:hover .geo-president-name-bg {
+    opacity: 0.18;
+    transform: translateY(-52%) rotate(-5deg);
+}
+
+@media (max-width: 900px) {
+    .geo-president-content {
+        max-width: 100%;
+    }
+
+    .geo-president-portrait {
+        right: 0;
+        width: min(420px, 78%);
+        height: 440px;
+        bottom: -38px;
+        opacity: 0.88;
+    }
+
+    .geo-president-name-bg {
+        top: 62%;
+        font-size: clamp(40px, 7.5vw, 72px);
+        opacity: 0.12;
+    }
+}
+
+@media (max-width: 480px) {
+    .geo-president-name-bg {
+        top: 64%;
+        font-size: clamp(32px, 9vw, 54px);
+        opacity: 0.12;
+        transform: translateY(-50%) rotate(-5deg);
+    }
+
+    .geo-president-portrait {
+        right: -10px;
+        width: min(420px, 100%);
+        height: 420px;
+        bottom: -36px;
+        opacity: 0.9;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .geo-president-card,
+    .geo-president-card::before,
+    .geo-president-card .geo-president-portrait,
+    .geo-president-card .geo-president-name-bg {
+        transition: none !important;
+    }
+
+    .geo-president-card::after {
+        animation: none !important;
+    }
+}

@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | IndiGo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/team.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+</head>
+
+<body class="page-background" data-title-en="Our Team | IndiGo" data-title-id="Tim Kami | IndiGo">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" class="active" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="team-hero" aria-label="Team hero">
+        <div class="container hero-content">
+            <h1 class="page-title" data-aos="zoom-in" data-aos-duration="1200" data-i18n-en="Our Team" data-i18n-id="Tim Kami">
+                Our Team
+            </h1>
+            <p class="team-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                data-i18n-en="Members by major"
+                data-i18n-id="Anggota per jurusan">
+                Members by major
+            </p>
+        </div>
+    </section>
+
+    <section class="team-content">
+        <div class="container">
+	            <header class="team-intro" data-aos="fade-up">
+	                <h2 class="team-intro-title" data-i18n-en="Our Team" data-i18n-id="Refleksi Projek">Our Team</h2>
+	                <p class="team-intro-desc"
+	                    data-i18n-en="A list of members grouped by major."
+	                    data-i18n-id="Daftar anggota yang dikelompokkan berdasarkan jurusan.">
+	                    A list of members grouped by major.
+	                </p>
+	            </header>
+
+	            <section class="team-members" aria-label="Team members" data-aos="fade-up" data-aos-delay="120">
+	                <header class="team-members-head">
+	                    <div class="team-members-mark" aria-hidden="true">
+	                        <img class="team-members-logo" src="/assets/images/team-emblem.svg" alt="" loading="lazy" decoding="async">
+	                    </div>
+	                    <h2 class="team-members-title" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</h2>
+	                    <p class="team-members-sub"
+	                        data-i18n-en="Member names by major."
+	                        data-i18n-id="Nama anggota per jurusan.">
+	                        Member names by major.
+	                    </p>
+	                </header>
+
+	                <div class="team-members-grid" aria-label="Team members list">
+	                    <article class="team-members-card">
+	                        <h3 class="team-members-major">PPLG</h3>
+	                        <ul class="team-members-list" aria-label="PPLG members">
+	                            <li class="team-member">Dariel</li>
+	                            <li class="team-member">Erin</li>
+	                            <li class="team-member">Claudya</li>
+	                            <li class="team-member">Albian</li>
+	                            <li class="team-member">Khalid</li>
+	                            <li class="team-member">Jack</li>
+	                            <li class="team-member">Evan</li>
+	                        </ul>
+	                    </article>
+
+	                    <article class="team-members-card">
+	                        <h3 class="team-members-major">AKT</h3>
+	                        <ul class="team-members-list" aria-label="AKT members">
+	                            <li class="team-member">Azizah</li>
+	                            <li class="team-member">Oyie</li>
+	                            <li class="team-member">Natasya</li>
+	                            <li class="team-member">Nanad</li>
+	                            <li class="team-member">Justin</li>
+	                        </ul>
+	                    </article>
+
+	                    <article class="team-members-card">
+	                        <h3 class="team-members-major">Hotel</h3>
+	                        <ul class="team-members-list" aria-label="Hotel members">
+	                            <li class="team-member">Al Louise</li>
+	                            <li class="team-member">El pasha</li>
+	                            <li class="team-member">Nadien Mutia</li>
+	                            <li class="team-member">Trully</li>
+	                            <li class="team-member">Adam dimitri</li>
+	                        </ul>
+	                    </article>
+
+	                    <article class="team-members-card">
+	                        <h3 class="team-members-major">DKV</h3>
+	                        <ul class="team-members-list" aria-label="DKV members">
+	                            <li class="team-member">Anindi</li>
+	                            <li class="team-member">Shafira</li>
+	                            <li class="team-member">Aira</li>
+	                            <li class="team-member">Arsyad</li>
+	                            <li class="team-member">Devka</li>
+	                            <li class="team-member">Uli</li>
+	                            <li class="team-member">Andra</li>
+	                        </ul>
+	                    </article>
+
+	                    <article class="team-members-card team-members-card--wide">
+	                        <h3 class="team-members-major">Kuliner</h3>
+	                        <ul class="team-members-list" aria-label="Kuliner members">
+	                            <li class="team-member">Ayumi</li>
+	                            <li class="team-member">Fairuz</li>
+	                            <li class="team-member">Rheina</li>
+	                            <li class="team-member">Cantika</li>
+	                            <li class="team-member">Hani</li>
+	                            <li class="team-member">Maheswari</li>
+	                            <li class="team-member">Zaid</li>
+	                            <li class="team-member">Ray sakin</li>
+	                        </ul>
+	                    </article>
+	                </div>
+	            </section>
+
+	            <section class="major-block" aria-label="Refleksi PPLG" data-aos="fade-up">
+	                <header class="major-header">
+	                    <h3 class="major-title">PPLG</h3>
+	                    <p class="major-desc">Refleksi PPLG</p>
+                </header>
+                <div class="card team-card">
+                    <img class="team-logo" src="/assets/images/team-emblem.svg" alt="" aria-hidden="true">
+                    <p class="team-role">Refleksi PPLG</p>
+                    <p>Proyek yang sedang kami kerjakan merupakan pembuatan website dan aplikasi yang berisi informasi mengenai negara India. Dalam proyek ini, kami tidak hanya bekerja dalam satu jurusan saja, tetapi juga melakukan kolaborasi dengan beberapa jurusan lain seperti Akuntansi, DKV, Kuliner, dan Perhotelan. Setiap jurusan memiliki peran yang berbeda sesuai dengan bidang keahliannya, sehingga proyek ini menjadi lebih lengkap dan menarik. Jurusan PPLG berfokus pada pembuatan website dan aplikasi, DKV membantu dalam desain visual dan tampilan agar lebih menarik, Kuliner memberikan informasi mengenai makanan khas India, Perhotelan berkontribusi pada aspek pariwisata, sedangkan Akuntansi membantu dalam pengelolaan atau perencanaan yang berkaitan dengan perhitungan biaya.</p>
+                    <p>Dalam proses pengerjaan proyek ini, kami mengumpulkan berbagai informasi mengenai India dari berbagai sumber yang dapat dipercaya. Informasi yang kami sajikan cukup luas dan mencakup banyak aspek penting dari negara tersebut. Beberapa di antaranya adalah destinasi wisata yang terkenal, keindahan alam atau nature, biografi tokoh penting dan pahlawan nasional, budaya dan tradisi masyarakat, festival yang sering diadakan, serta agama yang dianut oleh masyarakat India. Selain itu, kami juga mempelajari mengenai kondisi geografi dan demografi India, seperti letak wilayah, iklim, jumlah penduduk, serta keberagaman masyarakatnya. Dengan mempelajari semua informasi tersebut, kami menjadi lebih memahami bahwa India adalah negara yang memiliki kekayaan budaya, tradisi, serta potensi wisata yang sangat besar dan menarik untuk dipelajari.</p>
+                    <p>Proyek ini tidak hanya memberikan pengetahuan baru mengenai India, tetapi juga memberikan pengalaman yang berharga dalam bekerja secara tim. Dalam proses pengerjaan, kami belajar bagaimana melakukan pembagian tugas, berdiskusi, serta menyatukan berbagai ide dari setiap anggota kelompok. Terkadang kami juga menghadapi beberapa tantangan, seperti menyatukan pendapat yang berbeda atau menyesuaikan waktu pengerjaan. Pengalaman ini membuat kami semakin memahami bahwa kerja tim yang baik sangat penting dalam menyelesaikan suatu proyek yang besar.</p>
+                    <p>Selain itu, kami juga belajar bagaimana menyampaikan informasi melalui media digital seperti website dan aplikasi agar dapat dipahami dengan mudah oleh pengguna. Kami berusaha membuat tampilan yang menarik, menyusun informasi dengan rapi, serta memastikan bahwa konten yang disajikan informatif dan bermanfaat bagi orang yang melihatnya. Dengan adanya proyek ini, kami tidak hanya mengembangkan kemampuan teknis dalam pembuatan aplikasi dan website, tetapi juga meningkatkan kreativitas, kemampuan komunikasi, serta keterampilan dalam mengolah informasi. Secara keseluruhan, proyek ini memberikan pengalaman yang sangat berharga bagi kami, baik dalam menambah wawasan tentang negara India maupun dalam meningkatkan kemampuan kerja sama tim dan keterampilan dalam mengembangkan media digital.</p>
+                </div>
+            </section>
+
+            <section class="major-block" aria-label="Refleksi DKV" data-aos="fade-up">
+                <header class="major-header">
+                    <h3 class="major-title">DKV</h3>
+                    <p class="major-desc">Refleksi DKV</p>
+                </header>
+                <div class="card team-card">
+                    <img class="team-logo" src="/assets/images/team-emblem.svg" alt="" aria-hidden="true">
+                    <p class="team-role">Refleksi DKV</p>
+                    <p>Dalam projek negara ini, kami mendapatkan banyak pengalaman dan pelajaran yang berharga. Projek ini mulai dilaksanakan bulan lalu sampai dengan sekarang bersama teman-teman kelompok, terutama dari jurusan kami sendiri yaitu DKV. Melalui kegiatan ini, kami belajar lebih banyak tentang negara lain seperti India, dan juga kami menjadi lebih tahu mengenai komponen-komponen dalam suatu negara.</p>
+                    <p>Selama proses pengerjaan projek, kami melakukan beberapa kegiatan seperti diskusi, mencari informasi, serta pembuatan produk seperti menggambar, mendesain, dan juga memikirkan bentuk stand. Dari kegiatan tersebut, kami memahami bahwa kerja sama dan komunikasi sangat penting agar projek dapat berjalan dengan baik.</p>
+                    <p>Namun, dalam pelaksanaannya kami juga menghadapi beberapa tantangan, seperti waktu yang sedikit, kekurangan ide, dan juga miskomunikasi. Untuk mengatasinya, kami mencoba bekerja sama untuk mencari ide, mengatur waktu, serta saling mengingatkan tentang tugas masing-masing agar tidak terjadi miskomunikasi. Dari pengalaman ini kami belajar bahwa setiap masalah bisa diselesaikan jika kami mau bekerja sama dan tidak mudah menyerah.</p>
+                    <p>Melalui projek ini, kami merasa kemampuan kami dalam bekerja sama dalam tim menjadi lebih baik. Pengalaman ini juga membuat kami lebih memahami tentang unsur-unsur negara, seperti iklim, musim, suhu, arah angin, dan sebagainya.</p>
+                    <p>Ke depannya, kami berharap dapat menerapkan apa yang telah kami pelajari dari projek ini di masa yang akan datang. Kami juga ingin terus meningkatkan kemampuan kami dalam hal-hal yang dapat berguna dan bermanfaat.</p>
+                </div>
+            </section>
+
+            <section class="major-block" aria-label="Refleksi Kuliner" data-aos="fade-up">
+                <header class="major-header">
+                    <h3 class="major-title">Kuliner</h3>
+                    <p class="major-desc">Refleksi Kuliner</p>
+                </header>
+                <div class="card team-card">
+                    <img class="team-logo" src="/assets/images/team-emblem.svg" alt="" aria-hidden="true">
+                    <p class="team-role">Refleksi Kuliner</p>
+                    <p>Alhamdulillah kami sangat bersyukur dapat mengerjakan proyek ini hingga selesai dengan tim yang kompak dan guru-guru juga mendampingi kami dalam mengerjakan proyek ini. Tetapi kekurangan yang kami rasakan adalah kami sering mendapatkan informasi yang mendadak dan juga membutuhkan waktu yang sangat lama untuk mendapatkan bahan-bahan untuk membuat main course dan dessert sehingga kami tidak memiliki banyak waktu untuk melakukan uji coba produk.</p>
+                </div>
+            </section>
+
+            <section class="major-block" aria-label="Refleksi Akuntansi" data-aos="fade-up">
+                <header class="major-header">
+                    <h3 class="major-title">Akuntansi</h3>
+                    <p class="major-desc">Refleksi Akuntansi</p>
+                </header>
+                <div class="card team-card">
+                    <img class="team-logo" src="/assets/images/team-emblem.svg" alt="" aria-hidden="true">
+                    <p class="team-role">Refleksi Akuntansi</p>
+                    <p>Melalui proyek membuat perencanaan perjalanan ke negara India, kami mendapatkan banyak pengalaman dan pengetahuan baru. Proyek ini tidak hanya mengajarkan saya tentang cara menyusun rencana perjalanan, tetapi juga membantu kami memahami bagaimana mengatur waktu, menentukan tujuan wisata, serta memperkirakan biaya perjalanan secara lebih terencana.</p>
+                    <p>Dalam proyek ini kami belajar mencari informasi tentang berbagai tempat wisata terkenal di India. Beberapa tempat yang kami pelajari antara lain Taj Mahal yang merupakan salah satu bangunan bersejarah dan simbol cinta yang sangat terkenal di dunia, serta Gateway of India yang menjadi salah satu ikon kota Mumbai. Dengan mempelajari tempat-tempat tersebut, saya menjadi lebih mengetahui tentang budaya, sejarah, dan keindahan negara India.</p>
+                    <p>Selain itu, kami juga belajar menyusun itinerary perjalanan dari hari pertama hingga hari terakhir. Dalam proses ini kami harus mempertimbangkan berbagai hal seperti waktu perjalanan, jarak antar tempat wisata, transportasi yang digunakan, serta aktivitas yang akan dilakukan di setiap lokasi. Hal ini melatih saya untuk berpikir secara sistematis dan membuat perencanaan yang terstruktur.</p>
+                    <p>Proyek ini juga membuat kami memahami bahwa merencanakan perjalanan tidaklah mudah. Kita harus mempertimbangkan faktor keamanan, kenyamanan, anggaran biaya, serta informasi yang akurat mengenai tempat yang akan dikunjungi. Oleh karena itu, kami belajar untuk lebih teliti dalam mencari informasi dan membuat keputusan.</p>
+                    <p>Melalui kegiatan ini kami juga merasa kemampuan kami dalam bekerja secara mandiri, mencari informasi, dan mengolah data menjadi lebih baik. Selain menambah wawasan tentang negara lain, proyek ini juga melatih keterampilan perencanaan yang sangat berguna dalam kehidupan sehari-hari.</p>
+                    <p>Secara keseluruhan, proyek membuat travel ke India memberikan pengalaman belajar yang sangat bermanfaat bagi saya. Ke depannya, saya berharap dapat membuat perencanaan perjalanan yang lebih lengkap, lebih detail, dan lebih kreatif. Kami juga menjadi lebih tertarik untuk mempelajari berbagai negara di dunia serta budaya yang ada di dalamnya.</p>
+                </div>
+            </section>
+
+            <section class="major-block" aria-label="Refleksi Perhotelan" data-aos="fade-up">
+                <header class="major-header">
+                    <h3 class="major-title">Perhotelan</h3>
+                    <p class="major-desc">Refleksi Perhotelan</p>
+                </header>
+                <div class="card team-card">
+                    <img class="team-logo" src="/assets/images/team-emblem.svg" alt="" aria-hidden="true">
+                    <p class="team-role">Refleksi Perhotelan</p>
+                    <p><strong>Louise:</strong> Selama mengerjakan projek tentang negara India ini, saya mendapatkan banyak pengetahuan baru, seperti tentang tokoh inspiratif dari India, minuman khas India, kandungan gizi dari minuman tersebut, serta beberapa destinasi wisata di India. Selama prosesnya, ada beberapa miskomunikasi dalam kelompok, antar guru dan beberapa anggota kurang aktif, sehingga membuat pengerjaan tugas terasa sedikit lebih sulit. Dari projek ini saya belajar bahwa kerja sama tim dan komunikasi yang baik sangat penting, projek ini membuat saya menambah wawasan dan pengalaman baru.</p>
+                    <p><strong>Muhammad El Pasha Haqurrasyid:</strong> Selama projek ini berlangsung, saya belajar banyak sekali tentang negara India, mulai dari tokoh perhotelan, minuman khas negara tersebut, dan tempat-tempat wisata yang berada di sana. Dari projek ini saya baru sadar bahwa kerja sama tim benar-benar sangat penting walaupun saya bisa dibilang hanya pada bagian meracik dan cara membuat minumannya saja namun juga membantu bila ada materi-materi yang belum dicari seperti biografi serta gizi/gastronomis.</p>
+                    <p>Aslinya pada saat mau diadakan sidang H-2 itu kelompok kami belum mencoba meracik-racik minumannya dikarenakan banyak wacana â€œbikinnya di rumah siapaâ€ namun salah satu dari kami mencoba membuat di rumah agar pada saat diuji coba guru kita sudah tau takarannya, alhamdulillahnya lancar jaya serta cepet selesai dan di acc.</p>
+                    <p><strong>Trully:</strong> India dan segelas chai adalah representasi sempurna dari harmoni dalam keberagaman, di mana kompleksitas elemen yang berbeda justru menciptakan satu kesatuan yang hangat dan bermakna. India mengajarkan kita bagaimana tradisi kuno dan kemajuan modern dapat berdampingan secara selaras, sebagaimana racikan rempah dalam chaiâ€”seperti jahe, kapulaga, dan kayu manisâ€”yang menyatu dengan teh untuk menjadi simbol perekat sosial yang melintasi batasan kelas.</p>
+                    <p><strong>Mutia:</strong> Selama mengerjakan projek saya jadi tau tentang negara India mulai dari makanannya, minuman yang dibuat oleh kita dan wisatanya, dan menambah pengetahuan saya juga.</p>
+                    <p><strong>Adam Dimitri Yusuf A:</strong> Selama projek ini saya belajar banyak sekali tentang negara India, dari tokoh India di bidang perhotelan, minuman khasnya, dan tempat-tempat wisata yang berada di negara tersebut. Untuk menambah ilmu pengetahuan saya.</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer site-footer--minimal">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="footer-mark" href="index.html" aria-label="IndiGo home">
+                    <span class="footer-mark-main">Indi</span><span class="footer-mark-accent">Go</span>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n-en="© 2024 IndiGo. All rights reserved." data-i18n-id="© 2024 IndiGo. Hak cipta dilindungi.">© 2024 IndiGo. All rights reserved.</p>
+                <p class="footer-credit" data-i18n-en="Designed by SMK Metland" data-i18n-id="Didesain oleh SMK Metland">Designed by SMK Metland</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature | IndiGo</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+
+    <style>
+        :root {
+            --nature-bg: radial-gradient(1200px 800px at 20% 15%, rgba(120, 219, 226, 0.18), transparent 60%),
+                radial-gradient(1000px 700px at 85% 40%, rgba(247, 183, 51, 0.16), transparent 62%),
+                radial-gradient(900px 620px at 50% 110%, rgba(252, 74, 26, 0.10), transparent 60%),
+                linear-gradient(180deg, #070A12 0%, #0B1220 50%, #070A12 100%);
+            --glass: rgba(255, 255, 255, 0.08);
+            --glass-2: rgba(255, 255, 255, 0.06);
+            --stroke: rgba(255, 255, 255, 0.14);
+            --text: rgba(255, 255, 255, 0.90);
+            --muted: rgba(255, 255, 255, 0.70);
+        }
+
+        body.page-nature {
+            background: var(--nature-bg);
+            color: var(--text);
+        }
+
+        .nature-hero {
+            position: relative;
+            padding: 120px 0 40px;
+            overflow: hidden;
+        }
+
+        .nature-hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(1200px 520px at 20% 0%, rgba(255, 255, 255, 0.10), transparent 60%),
+                radial-gradient(900px 520px at 90% 30%, rgba(120, 219, 226, 0.14), transparent 58%),
+                linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.10));
+            pointer-events: none;
+        }
+
+        .nature-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .nature-title {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(44px, 5.4vw, 74px);
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.96);
+        }
+
+        .nature-sub {
+            max-width: 72ch;
+            color: var(--muted);
+            line-height: 1.9;
+            font-size: 14px;
+        }
+
+        .nature-hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .nbadge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(12px);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.86);
+        }
+
+        .nbadge i {
+            opacity: 0.9;
+        }
+
+        .nature-shell {
+            padding: 28px 0 110px;
+        }
+
+        .nature-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .ncard {
+            grid-column: span 6;
+            position: relative;
+            border-radius: 26px;
+            overflow: hidden;
+            background: var(--glass);
+            border: 1px solid var(--stroke);
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(14px);
+            transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 260ms ease, border-color 260ms ease;
+        }
+
+        .ncard::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.62));
+            pointer-events: none;
+        }
+
+        .ncard:hover {
+            transform: translateY(-3px);
+            border-color: rgba(120, 219, 226, 0.32);
+            box-shadow: 0 28px 84px rgba(0, 0, 0, 0.62);
+        }
+
+        .nmedia {
+            position: relative;
+            height: 260px;
+        }
+
+        .nimg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: saturate(1.08) contrast(1.04);
+            transform: scale(1.02);
+            transition: transform 520ms ease, filter 520ms ease;
+        }
+
+        .ncard:hover .nimg {
+            transform: scale(1.06);
+            filter: saturate(1.12) contrast(1.08);
+        }
+
+        .ntag {
+            position: absolute;
+            left: 14px;
+            top: 14px;
+            z-index: 2;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 800;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            font-size: 11px;
+            backdrop-filter: blur(10px);
+        }
+
+        .nbody {
+            position: relative;
+            z-index: 2;
+            padding: 16px 16px 18px;
+        }
+
+        .ntitle {
+            font-family: "Playfair Display", serif;
+            font-size: 26px;
+            line-height: 1.15;
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.96);
+        }
+
+        .ndesc {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 14px;
+            line-height: 1.9;
+            margin: 0;
+        }
+
+        .nature-wide {
+            grid-column: span 12;
+            border-radius: 30px;
+            background: var(--glass-2);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 26px 80px rgba(0, 0, 0, 0.55);
+            padding: 22px;
+            backdrop-filter: blur(14px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nature-wide::before {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, rgba(252, 74, 26, 0.40), rgba(247, 183, 51, 0.35), rgba(120, 219, 226, 0.28));
+            opacity: 0.25;
+            filter: blur(12px);
+            pointer-events: none;
+        }
+
+        .nature-wide > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .nature-wide h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.96);
+        }
+
+        .nature-wide p {
+            color: rgba(255, 255, 255, 0.76);
+            line-height: 1.95;
+            font-size: 14px;
+            max-width: 90ch;
+            margin: 0;
+        }
+
+        .nature-peaks {
+            margin-top: 16px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 26px 80px rgba(0, 0, 0, 0.55);
+            padding: 22px;
+            backdrop-filter: blur(14px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nature-peaks::before {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            background:
+                radial-gradient(800px 240px at 18% 10%, rgba(120, 219, 226, 0.40), transparent 62%),
+                radial-gradient(700px 220px at 82% 0%, rgba(247, 183, 51, 0.32), transparent 62%),
+                linear-gradient(135deg, rgba(120, 219, 226, 0.22), rgba(252, 74, 26, 0.18));
+            opacity: 0.5;
+            filter: blur(18px);
+            pointer-events: none;
+        }
+
+        .nature-peaks > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .npeaks-top {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .npeaks-top h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.96);
+        }
+
+        .npeaks-top p {
+            margin: 8px 0 0;
+            max-width: 88ch;
+            color: rgba(255, 255, 255, 0.74);
+            line-height: 1.95;
+            font-size: 13.5px;
+        }
+
+        .peaks-media {
+            margin-top: 14px;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: rgba(255, 255, 255, 0.06);
+            position: relative;
+            height: 220px;
+        }
+
+        .peaks-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: saturate(1.05) contrast(1.05);
+            transform: scale(1.02);
+        }
+
+        .peaks-media::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.58));
+            pointer-events: none;
+        }
+
+        .peaks-caption {
+            position: absolute;
+            left: 14px;
+            bottom: 14px;
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .nchip-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .nchip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 9px 12px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.30);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: rgba(255, 255, 255, 0.86);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            backdrop-filter: blur(10px);
+        }
+
+        .peak-grid {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .peak {
+            grid-column: span 6;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.28);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 14px 14px 13px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), border-color 240ms ease;
+        }
+
+        .peak::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.35));
+            pointer-events: none;
+        }
+
+        .peak:hover {
+            transform: translateY(-2px);
+            border-color: rgba(120, 219, 226, 0.26);
+        }
+
+        .peak > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .peak-name {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .peak-name h3 {
+            font-family: "Playfair Display", serif;
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 0.2px;
+            color: rgba(255, 255, 255, 0.96);
+        }
+
+        .peak-height {
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.90);
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(10px);
+            white-space: nowrap;
+        }
+
+        .peak-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .pmeta {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 7px 9px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 12.5px;
+            line-height: 1.4;
+        }
+
+        .pmeta i {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 900px) {
+            .peak {
+                grid-column: span 12;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .ncard {
+                grid-column: span 12;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .ncard,
+            .nimg {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="page-nature" data-title-en="Nature | IndiGo" data-title-id="Alam | IndiGo">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="nature-hero" aria-label="Nature hero">
+        <div class="container">
+            <h1 class="nature-title" data-aos="zoom-in" data-aos-duration="1200" data-i18n-en="Nature" data-i18n-id="Keindahan Alam">
+                Nature
+            </h1>
+            <p class="nature-sub" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="140"
+                data-i18n-en="A quick look at India’s natural beauty—mountains, deserts, forests, coasts, and rivers."
+                data-i18n-id="Ringkasan keindahan alam India—pegunungan, gurun, hutan, pesisir, dan sungai.">
+                A quick look at India’s natural beauty—mountains, deserts, forests, coasts, and rivers.
+            </p>
+            <div class="nature-hero-badges" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="220">
+                <span class="nbadge"><i class="fa-solid fa-mountain"></i><span data-i18n-en="Mountains" data-i18n-id="Pegunungan">Mountains</span></span>
+                <span class="nbadge"><i class="fa-solid fa-sun"></i><span data-i18n-en="Desert" data-i18n-id="Gurun">Desert</span></span>
+                <span class="nbadge"><i class="fa-solid fa-tree"></i><span data-i18n-en="Forests" data-i18n-id="Hutan">Forests</span></span>
+                <span class="nbadge"><i class="fa-solid fa-water"></i><span data-i18n-en="Rivers & coasts" data-i18n-id="Sungai & pesisir">Rivers & coasts</span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="nature-shell">
+        <div class="container">
+            <div class="nature-wide" data-aos="fade-up">
+                <h2 data-i18n-en="Why it feels vast" data-i18n-id="Kenapa terasa luas">Why it feels vast</h2>
+                <p data-i18n-en="From snow to sand, India stretches across multiple landscapes. Each region has its own colors, temperature, and rhythm—so traveling even a short route can feel like crossing different worlds."
+                    data-i18n-id="Dari salju sampai pasir, India punya banyak lanskap. Tiap wilayah punya warna, suhu, dan ritme sendiri—jadi perjalanan singkat pun bisa terasa seperti pindah dunia.">
+                    From snow to sand, India stretches across multiple landscapes. Each region has its own colors, temperature, and rhythm—so traveling even a short route can feel like crossing different worlds.
+                </p>
+            </div>
+
+            <div class="nature-peaks" data-aos="fade-up" data-aos-delay="70" aria-label="Mountain peaks and heights">
+                <div class="npeaks-top">
+                    <div>
+                        <h2 data-i18n-en="Mountain highlights (with heights)"
+                            data-i18n-id="Gunung populer (dengan ketinggian)">Mountain highlights (with heights)</h2>
+                        <p data-i18n-en="A few well-known peaks across India. Heights are shown in meters (m)."
+                            data-i18n-id="Beberapa puncak terkenal di India. Ketinggian ditulis dalam meter (m).">
+                            A few well-known peaks across India. Heights are shown in meters (m).
+                        </p>
+                        <div class="nchip-row" aria-label="Ranges">
+                            <span class="nchip"><i class="fa-solid fa-mountain"></i><span data-i18n-en="Himalayas"
+                                    data-i18n-id="Himalaya">Himalayas</span></span>
+                            <span class="nchip"><i class="fa-solid fa-leaf"></i><span data-i18n-en="Western Ghats"
+                                    data-i18n-id="Ghats Barat">Western Ghats</span></span>
+                            <span class="nchip"><i class="fa-solid fa-compass"></i><span data-i18n-en="Other ranges"
+                                    data-i18n-id="Pegunungan lain">Other ranges</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <figure class="peaks-media" aria-label="Mountain view">
+                    <img class="peaks-img"
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80"
+                        alt="Snowy mountain ridge under a dramatic sky" loading="lazy" decoding="async">
+                    <figcaption class="peaks-caption">
+                        <span class="nchip"><i class="fa-solid fa-mountain"></i><span data-i18n-en="Peak list"
+                                data-i18n-id="Daftar puncak">Peak list</span></span>
+                    </figcaption>
+                </figure>
+
+                <div class="peak-grid" role="list" aria-label="Peak list">
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Kangchenjunga</h3>
+                            <span class="peak-height">8,586 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Sikkim</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Himalaya</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Nanda Devi</h3>
+                            <span class="peak-height">7,816 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Uttarakhand</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Garhwal Himalaya</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Kamet</h3>
+                            <span class="peak-height">7,756 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Uttarakhand</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Garhwal Himalaya</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Trisul</h3>
+                            <span class="peak-height">7,120 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Uttarakhand</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Kumaon Himalaya</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Sandakphu</h3>
+                            <span class="peak-height">3,636 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>West Bengal</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Singalila Ridge</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Anamudi</h3>
+                            <span class="peak-height">2,695 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Kerala</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Western Ghats</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Doddabetta</h3>
+                            <span class="peak-height">2,637 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Tamil Nadu</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Nilgiri Hills</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Guru Shikhar</h3>
+                            <span class="peak-height">1,722 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Rajasthan</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Aravalli Range</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Mullayyanagiri</h3>
+                            <span class="peak-height">1,925 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Karnataka</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Western Ghats</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Kalsubai</h3>
+                            <span class="peak-height">1,646 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Maharashtra</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Sahyadri (Western Ghats)</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Shillong Peak</h3>
+                            <span class="peak-height">1,965 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Meghalaya</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Khasi Hills</span>
+                        </div>
+                    </div>
+
+                    <div class="peak" role="listitem">
+                        <div class="peak-name">
+                            <h3>Girnar</h3>
+                            <span class="peak-height">1,145 m</span>
+                        </div>
+                        <div class="peak-meta">
+                            <span class="pmeta"><i class="fa-solid fa-location-dot"></i>Gujarat</span>
+                            <span class="pmeta"><i class="fa-solid fa-mountain"></i>Girnar Hills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nature-grid" aria-label="Nature cards">
+                <article class="ncard" data-aos="fade-up" data-aos-delay="60">
+                    <div class="nmedia">
+                        <span class="ntag">Himalaya</span>
+                        <img class="nimg" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80"
+                            alt="Mountain landscape" loading="lazy" decoding="async">
+                    </div>
+                    <div class="nbody">
+                        <h3 class="ntitle" data-i18n-en="Mountains" data-i18n-id="Pegunungan">Mountains</h3>
+                        <p class="ndesc"
+                            data-i18n-en="India's north is crowned by the Himalayas, formed by the collision of the Indian and Eurasian plates. Many peaks rise above 7,000 m, and snowfields feed glaciers that give birth to major rivers. Weather changes quickly with altitude, so valleys can feel mild while ridgelines stay icy. Kangchenjunga (8,586 m) is often cited as the highest peak in India."
+                            data-i18n-id="Wilayah utara India didominasi Himalaya, terbentuk dari tumbukan Lempeng India dan Eurasia. Banyak puncak menjulang di atas 7.000 m, dan hamparan salju serta gletser menjadi sumber beberapa sungai besar. Cuaca berubah cepat seiring ketinggian—lembah bisa terasa sejuk, sementara punggungan tetap dingin. Kangchenjunga (8.586 m) sering disebut puncak tertinggi di India.">
+                            India's north is crowned by the Himalayas, formed by the collision of the Indian and Eurasian plates. Many peaks rise above 7,000 m, and snowfields feed glaciers that give birth to major rivers. Weather changes quickly with altitude, so valleys can feel mild while ridgelines stay icy. Kangchenjunga (8,586 m) is often cited as the highest peak in India.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="ncard" data-aos="fade-up" data-aos-delay="90">
+                    <div class="nmedia">
+                        <span class="ntag">Thar</span>
+                        <img class="nimg" src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1600&q=80"
+                            alt="Desert dunes" loading="lazy" decoding="async">
+                    </div>
+                    <div class="nbody">
+                        <h3 class="ntitle" data-i18n-en="Desert" data-i18n-id="Gurun">Desert</h3>
+                        <p class="ndesc"
+                            data-i18n-en="India's main desert is the Thar Desert (mostly Rajasthan and parts of Gujarat), covering about 200,000 km². The landscape is defined by rolling dunes, sparse shrubs, and dry winds that can raise dust in seconds. Days can be very hot while nights cool down fast, especially outside the monsoon months. Desert towns and fort cities are shaped by water scarcity and seasonal travel."
+                            data-i18n-id="Gurun utama di India adalah Gurun Thar (utama di Rajasthan dan sebagian Gujarat), dengan luas sekitar 200.000 km². Lanskapnya didominasi bukit pasir, semak kering, dan angin yang bisa membawa debu dengan cepat. Siang hari bisa sangat panas, sementara malamnya turun dingin, terutama di luar musim monsun. Kota-kota gurun dan benteng-benteng tua berkembang karena adaptasi terhadap keterbatasan air dan pola perjalanan musiman.">
+                            India's main desert is the Thar Desert (mostly Rajasthan and parts of Gujarat), covering about 200,000 km². The landscape is defined by rolling dunes, sparse shrubs, and dry winds that can raise dust in seconds. Days can be very hot while nights cool down fast, especially outside the monsoon months. Desert towns and fort cities are shaped by water scarcity and seasonal travel.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="ncard" data-aos="fade-up" data-aos-delay="120">
+                    <div class="nmedia">
+                        <span class="ntag">Ghats</span>
+                        <img class="nimg" src="https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1600&q=80"
+                            alt="Green hills and forests" loading="lazy" decoding="async">
+                    </div>
+                    <div class="nbody">
+                        <h3 class="ntitle" data-i18n-en="Hills & forests" data-i18n-id="Perbukitan & hutan">Hills & forests</h3>
+                        <p class="ndesc"
+                            data-i18n-en="Hilly nature is shaped by the Western Ghats and Eastern Ghats. The Western Ghats stretch about 1,600 km and cover roughly 140,000 km², catching monsoon clouds and creating cooler, wetter slopes. These forests are known for high biodiversity, waterfalls, and layered canopies, with hill stations and tea/spice-growing regions along the ridges. Misty mornings and sudden rain are common, especially during monsoon season."
+                            data-i18n-id="Wilayah perbukitan dibentuk oleh Ghats Barat dan Ghats Timur. Ghats Barat membentang sekitar 1.600 km dan mencakup kurang lebih 140.000 km², menangkap awan monsun dan membuat lereng yang lebih sejuk serta lembap. Hutan-hutannya terkenal kaya biodiversitas, air terjun, dan kanopi berlapis, dengan banyak hill station serta daerah perkebunan teh/rempah di sepanjang punggungan. Pagi berkabut dan hujan mendadak sering terjadi, terutama saat musim monsun.">
+                            Hilly nature is shaped by the Western Ghats and Eastern Ghats. The Western Ghats stretch about 1,600 km and cover roughly 140,000 km², catching monsoon clouds and creating cooler, wetter slopes. These forests are known for high biodiversity, waterfalls, and layered canopies, with hill stations and tea/spice-growing regions along the ridges. Misty mornings and sudden rain are common, especially during monsoon season.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="ncard" data-aos="fade-up" data-aos-delay="150">
+                    <div class="nmedia">
+                        <span class="ntag">Coast</span>
+                        <img class="nimg" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80"
+                            alt="Coastal landscape" loading="lazy" decoding="async">
+                    </div>
+                    <div class="nbody">
+                        <h3 class="ntitle" data-i18n-en="Coasts & rivers" data-i18n-id="Pesisir & sungai">Coasts & rivers</h3>
+                        <p class="ndesc"
+                            data-i18n-en="India has long coastlines along the Arabian Sea and the Bay of Bengal (often cited at around 7,500 km). Beaches, cliffs, and backwaters meet busy ports and fishing villages. Major rivers like the Ganga (~2,525 km) create fertile plains and deltas, while mangroves and estuaries protect shorelines and support wildlife. Coastal life is strongly seasonal—monsoon winds, tides, and river floods all shape daily routines."
+                            data-i18n-id="India punya garis pantai panjang di Laut Arab dan Teluk Benggala (sering disebut sekitar 7.500 km). Pantai, tebing, dan backwaters bertemu dengan pelabuhan ramai serta desa nelayan. Sungai besar seperti Gangga (~2.525 km) membentuk dataran subur dan delta, sementara hutan mangrove dan muara sungai membantu melindungi pesisir dan menopang ekosistem. Kehidupan pesisir sangat musiman—angin monsun, pasang surut, dan banjir sungai ikut membentuk rutinitas harian.">
+                            India has long coastlines along the Arabian Sea and the Bay of Bengal (often cited at around 7,500 km). Beaches, cliffs, and backwaters meet busy ports and fishing villages. Major rivers like the Ganga (~2,525 km) create fertile plains and deltas, while mangroves and estuaries protect shorelines and support wildlife. Coastal life is strongly seasonal—monsoon winds, tides, and river floods all shape daily routines.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer site-footer--minimal">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="footer-mark" href="index.html" aria-label="IndiGo home">
+                    <span class="footer-mark-main">Indi</span><span class="footer-mark-accent">Go</span>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n-en="© 2026 IndiGo. All rights reserved." data-i18n-id="© 2026 IndiGo. Hak cipta dilindungi.">© 2026 IndiGo. All rights reserved.</p>
+                <p class="footer-credit" data-i18n-en="Designed by SMK Metland" data-i18n-id="Didesain oleh SMK Metland">Designed by SMK Metland</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+    </script>
+</body>
+
+</html>

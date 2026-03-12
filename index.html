@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiGo | Discover India</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <script src="/assets/js/i18n.js" defer></script>
+    <script src="/assets/js/nav.js" defer></script>
+</head>
+
+<body data-title-en="IndiGo | Discover India" data-title-id="IndiGo | Jelajahi India">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" data-aos="fade-down" data-aos-duration="1000">Indi<span>Go</span></a>
+            <nav data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" data-i18n-en="Home" data-i18n-id="Beranda">Home</a></li>
+                    <li><a href="about.html" data-i18n-en="About" data-i18n-id="Tentang">About</a></li>
+                    <li><a href="team.html" data-i18n-en="Our Team" data-i18n-id="Tim Kami">Our Team</a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language">
+                    <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" type="button" data-lang="id" aria-pressed="false">ID</button>
+                </div>
+                <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"
+                    data-i18n-aria-label-en="Open menu" data-i18n-aria-label-id="Buka menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title" data-aos="zoom-in" data-aos-duration="1200">IndiGo</h1>
+            <h2 class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+                data-i18n-en="Project: Discover India" data-i18n-id="Projek: Jelajah India">Project: Discover India</h2>
+            <p class="hero-desc" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+                data-i18n-en="This project was created to expand knowledge about India. It covers an overview of India, its geography, places to visit, biographies of important figures, sample tour packages, and famous foods and drinks."
+                data-i18n-id="Projek ini dibuat dengan tujuan untuk menambah wawasan dan pengetahuan mengenai negara India. Dalam projek ini dibahas gambaran umum India, letak geografis India, tempat-tempat wisata yang dapat dikunjungi, biografi tokoh penting dari India, serta contoh paket wisata dan makanan khas yang ada di India.">
+                This project was created to expand knowledge about India. It covers an overview of India, its geography,
+                places to visit, biographies of important figures, sample tour packages, and famous foods and drinks.
+            </p>
+            <div class="home-cta-row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="520">
+                <a class="home-btn" href="/assets/ebooks/indigo-ebook.pdf" target="_blank" rel="noopener"
+                    data-i18n-en="Open eBook" data-i18n-id="Buka eBook">Open eBook</a>
+                <a class="home-btn home-btn--ghost" href="/assets/ebooks/indigo-ebook.pdf" download
+                    data-i18n-en="Download eBook" data-i18n-id="Unduh eBook">Download eBook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Cards Section -->
+    <section class="features">
+        <div class="container">
+            <div class="cards-grid">
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="card-icon"><i class="fas fa-landmark"></i></div>
+                    <h3 class="card-title" data-i18n-en="Destinations" data-i18n-id="Destinasi">DESTINATIONS</h3>
+                    <p class="card-desc"
+                        data-i18n-en="Discover destinations in Mumbai and Agra. Tap each place to read a short description and highlights."
+                        data-i18n-id="Jelajahi destinasi di Mumbai dan Agra. Ketuk tiap tempat untuk membaca deskripsi singkat dan highlight.">
+                        Discover destinations in Mumbai and Agra. Tap each place to read a short description and highlights.
+                    </p>
+                    <a href="destinations.html" class="btn-card" data-i18n-en="Visit Page" data-i18n-id="Kunjungi">Visit Page</a>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="card-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <h3 class="card-title" data-i18n-en="Famous People" data-i18n-id="Tokoh Terkenal">Famous People</h3>
+                    <p class="card-desc" data-i18n-en="Read short biographies of famous figures from India, plus an AI video section."
+                        data-i18n-id="Baca biografi singkat tokoh terkenal dari India, ditambah section video AI.">
+                        Read short biographies of famous figures from India, plus an AI video section.
+                    </p>
+                    <a href="people.html" class="btn-card" data-i18n-en="Visit Page" data-i18n-id="Kunjungi">Visit Page</a>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <div class="card-icon"><i class="fas fa-masks-theater"></i></div>
+                    <h3 class="card-title" data-i18n-en="Culture & Demography" data-i18n-id="Budaya & Demografi">CULTURE</h3>
+                    <p class="card-desc"
+                        data-i18n-en="Learn cultural diversity in India—religions, everyday etiquette, and basic demographic notes."
+                        data-i18n-id="Pelajari keberagaman budaya India—agama, sopan santun sehari-hari, dan catatan demografi.">
+                        Learn cultural diversity in India—religions, everyday etiquette, and basic demographic notes.
+                    </p>
+                    <a href="culture.html" class="btn-card" data-i18n-en="Visit Page" data-i18n-id="Kunjungi">Visit Page</a>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="card-icon"><i class="fas fa-bowl-food"></i></div>
+                    <h3 class="card-title" data-i18n-en="Culinary" data-i18n-id="Kuliner">CULINARY</h3>
+                    <p class="card-desc"
+                        data-i18n-en="Explore famous foods and drinks—Masala Chai, Butter Chicken with naan, and Gulab Jamun—with recipe notes."
+                        data-i18n-id="Jelajahi makanan dan minuman khas—Masala Chai, Butter Chicken dengan naan, dan Gulab Jamun—lengkap dengan catatan resep.">
+                        Explore famous foods and drinks—Masala Chai, Butter Chicken with naan, and Gulab Jamun—with recipe notes.
+                    </p>
+                    <a href="culinary.html" class="btn-card" data-i18n-en="Visit Page" data-i18n-id="Kunjungi">Visit Page</a>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <div class="card-icon"><i class="fas fa-earth-asia"></i></div>
+                    <h3 class="card-title" data-i18n-en="Geographic" data-i18n-id="Geografis">GEOGRAPHIC</h3>
+                    <p class="card-desc"
+                        data-i18n-en="Learn India’s location, borders, landforms, and climate overview."
+                        data-i18n-id="Pelajari letak India, batas wilayah, bentang alam, dan gambaran iklimnya.">
+                        Learn India’s location, borders, landforms, and climate overview.
+                    </p>
+                    <a href="geographic.html" class="btn-card" data-i18n-en="Visit Page" data-i18n-id="Kunjungi">Visit Page</a>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="card-icon"><i class="fas fa-mountain"></i></div>
+                    <h3 class="card-title" data-i18n-en="Nature" data-i18n-id="Bentang Alam">NATURE</h3>
+                    <p class="card-desc" data-i18n-en="Explore major landforms and natural regions: Himalaya, Ghats, Deccan Plateau, and Indo-Gangga Plains."
+                        data-i18n-id="Jelajahi bentang alam utama: Himalaya, Ghats, Dataran Tinggi Dekkan, dan Dataran Rendah Indo-Gangga.">
+                        Explore major landforms and natural regions: Himalaya, Ghats, Deccan Plateau, and Indo-Gangga Plains.
+                    </p>
+                    <a href="nature.html" class="btn-card" data-i18n-en="Visit Page" data-i18n-id="Kunjungi">Visit Page</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section--spotlight" aria-label="Homepage spotlight">
+        <div class="container">
+            <header class="home-head" data-aos="fade-up">
+                <p class="home-kicker" data-i18n-en="SPOTLIGHT" data-i18n-id="SOROTAN">SPOTLIGHT</p>
+                <h2 class="home-title" data-i18n-en="Explore the project pages" data-i18n-id="Jelajahi halaman projek">Explore the project pages</h2>
+                <p class="home-sub"
+                    data-i18n-en="Quick highlights from the pages in this website."
+                    data-i18n-id="Sorotan singkat dari halaman-halaman di website ini.">
+                    Quick highlights from the pages in this website.
+                </p>
+            </header>
+
+            <div class="spotlight-grid" aria-label="Spotlight cards">
+                <a class="spotlight-card" href="destinations.html" data-aos="fade-up" data-aos-delay="60">
+                    <div class="spotlight-media">
+                        <img src="/assets/images/gatewayofindia.jpeg" alt="Gateway of India" loading="lazy" decoding="async">
+                    </div>
+                    <div class="spotlight-overlay" aria-hidden="true"></div>
+                    <div class="spotlight-body">
+                        <span class="spotlight-tag" data-i18n-en="Destinations" data-i18n-id="Destinasi">Destinations</span>
+                        <h3 class="spotlight-name">Mumbai • Agra</h3>
+                        <p class="spotlight-desc"
+                            data-i18n-en="Open Destinations to see the places listed in this project."
+                            data-i18n-id="Buka Destinations untuk melihat tempat-tempat yang ada di projek ini.">
+                            Open Destinations to see the places listed in this project.
+                        </p>
+                    </div>
+                </a>
+
+                <a class="spotlight-card" href="culinary.html" data-aos="fade-up" data-aos-delay="120">
+                    <div class="spotlight-media">
+                        <img src="/assets/images/butterchickenwithnaanbread.jpeg" alt="Butter Chicken" loading="lazy" decoding="async">
+                    </div>
+                    <div class="spotlight-overlay" aria-hidden="true"></div>
+                    <div class="spotlight-body">
+                        <span class="spotlight-tag" data-i18n-en="Culinary" data-i18n-id="Kuliner">Culinary</span>
+                        <h3 class="spotlight-name" data-i18n-en="Masala Chai • Butter Chicken • Gulab Jamun" data-i18n-id="Masala Chai • Butter Chicken • Gulab Jamun">
+                            Masala Chai • Butter Chicken • Gulab Jamun
+                        </h3>
+                        <p class="spotlight-desc"
+                            data-i18n-en="Explore the drink and foods covered in the ebook."
+                            data-i18n-id="Jelajahi minuman dan makanan yang dibahas di ebook.">
+                            Explore the drink and foods covered in the ebook.
+                        </p>
+                    </div>
+                </a>
+
+                <a class="spotlight-card" href="people.html" data-aos="fade-up" data-aos-delay="180">
+                    <div class="spotlight-media">
+                        <img src="/assets/images/OIP%209-2.png" alt="Sundar Pichai portrait" loading="lazy" decoding="async">
+                    </div>
+                    <div class="spotlight-overlay" aria-hidden="true"></div>
+                    <div class="spotlight-body">
+                        <span class="spotlight-tag" data-i18n-en="People" data-i18n-id="Tokoh">People</span>
+                        <h3 class="spotlight-name" data-i18n-en="Famous People" data-i18n-id="Tokoh Terkenal">Famous People</h3>
+                        <p class="spotlight-desc"
+                            data-i18n-en="Tap a photo to read the biography (from the ebook)."
+                            data-i18n-id="Ketuk foto untuk membaca biografi (berdasarkan ebook).">
+                            Tap a photo to read the biography (from the ebook).
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section--mountain" aria-label="About India on homepage">
+        <div class="container">
+            <div class="mountain-shell" data-aos="fade-up">
+                <div class="mountain-copy">
+                    <header class="home-head" style="text-align: left; margin: 0 0 14px;">
+                        <p class="home-kicker" data-i18n-en="ABOUT" data-i18n-id="TENTANG">ABOUT</p>
+                        <h2 class="home-title" data-i18n-en="About India" data-i18n-id="Gambaran Umum India">About India</h2>
+                        <p class="home-sub"
+                            data-i18n-en="India is a country with rich history, culture, and diverse architecture. It is known as one of the centers of ancient civilizations and has many historical legacies from various kingdoms and religions."
+                            data-i18n-id="India adalah negara yang memiliki kekayaan sejarah, budaya, dan arsitektur yang sangat beragam. Negara ini terkenal sebagai salah satu pusat peradaban kuno serta memiliki banyak peninggalan sejarah dari berbagai kerajaan dan agama.">
+                            India is a country with rich history, culture, and diverse architecture. It is known as one of the centers of ancient civilizations and has many historical legacies from various kingdoms and religions.
+                        </p>
+                        <p class="home-sub" style="margin-top: 10px;"
+                            data-i18n-en="Its historic cities are a major attraction for international tourists. Some featured destinations in this project include New Delhi, Mumbai, Agra, and Jaipur."
+                            data-i18n-id="Kota-kota bersejarah di India menjadi daya tarik utama bagi wisatawan mancanegara. Beberapa destinasi unggulan yang dibahas dalam projek ini antara lain: New Delhi (ibu kota), Mumbai, Agra, dan Jaipur.">
+                            Its historic cities are a major attraction for international tourists. Some featured destinations in this project include New Delhi, Mumbai, Agra, and Jaipur.
+                        </p>
+                        <div class="home-cta-row" style="justify-content: flex-start;">
+                            <a class="home-btn home-btn--alt" href="about.html" data-i18n-en="Read About" data-i18n-id="Baca Tentang">Read About</a>
+                            <a class="home-btn home-btn--ghost" href="destinations.html" data-i18n-en="See Destinations" data-i18n-id="Lihat Destinasi">See Destinations</a>
+                        </div>
+                    </header>
+
+                    <div class="mountain-stats" aria-label="Featured cities">
+                        <div class="mstat">
+                            <span class="mstat-num">New Delhi</span>
+                            <span class="mstat-label" data-i18n-en="Capital" data-i18n-id="Ibu kota">Capital</span>
+                        </div>
+                        <div class="mstat">
+                            <span class="mstat-num">Mumbai</span>
+                            <span class="mstat-label" data-i18n-en="City" data-i18n-id="Kota">City</span>
+                        </div>
+                        <div class="mstat">
+                            <span class="mstat-num">Agra</span>
+                            <span class="mstat-label" data-i18n-en="City" data-i18n-id="Kota">City</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mountain-media" data-aos="fade-up" data-aos-delay="120">
+                    <img src="/assets/images/hero2.png" alt="India scenery" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section--tiles" aria-label="Culinary highlights on homepage">
+        <div class="container">
+            <header class="home-head" data-aos="fade-up">
+                <p class="home-kicker" data-i18n-en="CULINARY" data-i18n-id="KULINER">CULINARY</p>
+                <h2 class="home-title" data-i18n-en="Famous foods and drinks" data-i18n-id="Makanan dan minuman khas">Famous foods and drinks</h2>
+                <p class="home-sub"
+                    data-i18n-en="Highlights covered in the ebook: Masala Chai, Butter Chicken with naan, and Gulab Jamun."
+                    data-i18n-id="Sorotan yang dibahas di ebook: Masala Chai, Butter Chicken dengan naan, dan Gulab Jamun.">
+                    Highlights covered in the ebook: Masala Chai, Butter Chicken with naan, and Gulab Jamun.
+                </p>
+            </header>
+
+            <div class="tile-grid" aria-label="Culinary tiles">
+                <a class="tile" href="culinary.html" data-aos="fade-up" data-aos-delay="60">
+                    <img class="tile-img" src="/assets/images/masala-chai.jpg" alt="Masala Chai" loading="lazy" decoding="async">
+                    <div class="tile-overlay" aria-hidden="true"></div>
+                    <div class="tile-body">
+                        <span class="tile-kicker">Drink</span>
+                        <h3 class="tile-title">Masala Chai</h3>
+                        <p class="tile-sub" data-i18n-en="Explore the drink covered in the ebook." data-i18n-id="Jelajahi minuman yang dibahas di ebook.">
+                            Explore the drink covered in the ebook.
+                        </p>
+                    </div>
+                </a>
+
+                <a class="tile" href="culinary.html" data-aos="fade-up" data-aos-delay="120">
+                    <img class="tile-img" src="/assets/images/butterchickenwithnaanbread.jpeg" alt="Butter Chicken with naan" loading="lazy" decoding="async">
+                    <div class="tile-overlay" aria-hidden="true"></div>
+                    <div class="tile-body">
+                        <span class="tile-kicker">Food</span>
+                        <h3 class="tile-title" data-i18n-en="Butter Chicken with naan" data-i18n-id="Butter Chicken dengan naan">Butter Chicken with naan</h3>
+                        <p class="tile-sub" data-i18n-en="Explore the food covered in the ebook." data-i18n-id="Jelajahi makanan yang dibahas di ebook.">
+                            Explore the food covered in the ebook.
+                        </p>
+                    </div>
+                </a>
+
+                <a class="tile" href="culinary.html" data-aos="fade-up" data-aos-delay="180">
+                    <img class="tile-img" src="/assets/images/gulab-jamun.jpg" alt="Gulab Jamun" loading="lazy" decoding="async">
+                    <div class="tile-overlay" aria-hidden="true"></div>
+                    <div class="tile-body">
+                        <span class="tile-kicker">Dessert</span>
+                        <h3 class="tile-title">Gulab Jamun</h3>
+                        <p class="tile-sub" data-i18n-en="Explore the dessert covered in the ebook." data-i18n-id="Jelajahi dessert yang dibahas di ebook.">
+                            Explore the dessert covered in the ebook.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="home-cta-row" data-aos="fade-up" data-aos-delay="220">
+                <a class="home-btn" href="culinary.html" data-i18n-en="Open Culinary Page" data-i18n-id="Buka Halaman Kuliner">Open Culinary Page</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section--gallery" aria-label="Gallery on homepage">
+        <div class="container" data-aos="fade-up">
+            <header class="home-head" style="text-align: left; margin: 0 0 12px;">
+                <p class="home-kicker" data-i18n-en="GALLERY" data-i18n-id="GALERI">GALLERY</p>
+                <h2 class="home-title" data-i18n-en="Places from Destinations" data-i18n-id="Tempat dari Destinations">Places from Destinations</h2>
+                <p class="home-sub"
+                    data-i18n-en="Scroll the photos to see destinations listed in this project."
+                    data-i18n-id="Geser foto untuk melihat destinasi yang ada di projek ini.">
+                    Scroll the photos to see destinations listed in this project.
+                </p>
+            </header>
+
+            <div class="scroller" aria-label="Destination photo scroller">
+                <figure class="shot">
+                    <img src="/assets/images/gatewayofindia.jpeg" alt="Gateway of India" loading="lazy" decoding="async">
+                    <figcaption class="shot-cap">Gateway of India</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="/assets/images/colabacauseway.jpeg" alt="Colaba Causeway" loading="lazy" decoding="async">
+                    <figcaption class="shot-cap">Colaba Causeway</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="/assets/images/chhatrapati.jpeg" alt="CSMVS Museum" loading="lazy" decoding="async">
+                    <figcaption class="shot-cap">CSMVS</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="/assets/images/juhubeach.jpeg" alt="Juhu Beach" loading="lazy" decoding="async">
+                    <figcaption class="shot-cap">Juhu Beach</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="/assets/images/mehtabbagh.jpeg" alt="Mehtab Bagh" loading="lazy" decoding="async">
+                    <figcaption class="shot-cap">Mehtab Bagh</figcaption>
+                </figure>
+                <figure class="shot">
+                    <img src="/assets/images/sadarbazaar.jpeg" alt="Sadar Bazaar" loading="lazy" decoding="async">
+                    <figcaption class="shot-cap">Sadar Bazaar</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section home-section--team" aria-label="Our team section on homepage">
+        <div class="container" data-aos="fade-up">
+            <div class="faq" aria-label="Our Team preview">
+                <p class="home-kicker" data-i18n-en="OUR TEAM" data-i18n-id="TIM KAMI">OUR TEAM</p>
+                <h3 class="mini-title" style="margin-bottom: 6px;" data-i18n-en="Meet the Team" data-i18n-id="Kenalan dengan Tim">Meet the Team</h3>
+                <p class="mini-desc" style="margin-bottom: 10px;"
+                    data-i18n-en="Meet the members behind this project. Open the Team page to see them grouped by major."
+                    data-i18n-id="Kenalan dengan anggota di balik projek ini. Buka halaman Team untuk melihat daftar per jurusan.">
+                    Meet the members behind this project. Open the Team page to see them grouped by major.
+                </p>
+
+                <div class="home-team-grid" aria-label="Team members">
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">D</div><div class="home-team-name">Dariel</div><div class="home-team-badge">PPLG</div></article>
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">E</div><div class="home-team-name">Erin</div><div class="home-team-badge">PPLG</div></article>
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">C</div><div class="home-team-name">Claudya</div><div class="home-team-badge">PPLG</div></article>
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">A</div><div class="home-team-name">Albian</div><div class="home-team-badge">PPLG</div></article>
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">K</div><div class="home-team-name">Khalid</div><div class="home-team-badge">PPLG</div></article>
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">J</div><div class="home-team-name">Jack</div><div class="home-team-badge">PPLG</div></article>
+                    <article class="home-team-card" data-major="PPLG"><div class="home-team-avatar">E</div><div class="home-team-name">Evan</div><div class="home-team-badge">PPLG</div></article>
+
+                    <article class="home-team-card" data-major="AKT"><div class="home-team-avatar">A</div><div class="home-team-name">Azizah</div><div class="home-team-badge">AKT</div></article>
+                    <article class="home-team-card" data-major="AKT"><div class="home-team-avatar">O</div><div class="home-team-name">Oyie</div><div class="home-team-badge">AKT</div></article>
+                    <article class="home-team-card" data-major="AKT"><div class="home-team-avatar">N</div><div class="home-team-name">Natasya</div><div class="home-team-badge">AKT</div></article>
+                    <article class="home-team-card" data-major="AKT"><div class="home-team-avatar">N</div><div class="home-team-name">Nanad</div><div class="home-team-badge">AKT</div></article>
+                    <article class="home-team-card" data-major="AKT"><div class="home-team-avatar">J</div><div class="home-team-name">Justin</div><div class="home-team-badge">AKT</div></article>
+
+                    <article class="home-team-card" data-major="HOTEL"><div class="home-team-avatar">AL</div><div class="home-team-name">Al Louise</div><div class="home-team-badge">HOTEL</div></article>
+                    <article class="home-team-card" data-major="HOTEL"><div class="home-team-avatar">EP</div><div class="home-team-name">El pasha</div><div class="home-team-badge">HOTEL</div></article>
+                    <article class="home-team-card" data-major="HOTEL"><div class="home-team-avatar">NM</div><div class="home-team-name">Nadien Mutia</div><div class="home-team-badge">HOTEL</div></article>
+                    <article class="home-team-card" data-major="HOTEL"><div class="home-team-avatar">T</div><div class="home-team-name">Trully</div><div class="home-team-badge">HOTEL</div></article>
+                    <article class="home-team-card" data-major="HOTEL"><div class="home-team-avatar">AD</div><div class="home-team-name">Adam dimitri</div><div class="home-team-badge">HOTEL</div></article>
+
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">A</div><div class="home-team-name">Anindi</div><div class="home-team-badge">DKV</div></article>
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">S</div><div class="home-team-name">Shafira</div><div class="home-team-badge">DKV</div></article>
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">A</div><div class="home-team-name">Aira</div><div class="home-team-badge">DKV</div></article>
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">A</div><div class="home-team-name">Arsyad</div><div class="home-team-badge">DKV</div></article>
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">D</div><div class="home-team-name">Devka</div><div class="home-team-badge">DKV</div></article>
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">U</div><div class="home-team-name">Uli</div><div class="home-team-badge">DKV</div></article>
+                    <article class="home-team-card" data-major="DKV"><div class="home-team-avatar">A</div><div class="home-team-name">Andra</div><div class="home-team-badge">DKV</div></article>
+
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">A</div><div class="home-team-name">Ayumi</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">F</div><div class="home-team-name">Fairuz</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">R</div><div class="home-team-name">Rheina</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">C</div><div class="home-team-name">Cantika</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">H</div><div class="home-team-name">Hani</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">M</div><div class="home-team-name">Maheswari</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">Z</div><div class="home-team-name">Zaid</div><div class="home-team-badge">KULINER</div></article>
+                    <article class="home-team-card" data-major="KULINER"><div class="home-team-avatar">RS</div><div class="home-team-name">Ray sakin</div><div class="home-team-badge">KULINER</div></article>
+                </div>
+
+                <div class="big-cta">
+                    <div>
+                        <p class="big-cta-kicker" data-i18n-en="OUR TEAM" data-i18n-id="TIM KAMI">OUR TEAM</p>
+                        <h3 class="big-cta-title" data-i18n-en="See the full member list" data-i18n-id="Lihat daftar anggota lengkap">See the full member list</h3>
+                        <p class="big-cta-sub"
+                            data-i18n-en="Open the Team page to view members grouped by major."
+                            data-i18n-id="Buka halaman Team untuk melihat anggota yang dikelompokkan per jurusan.">
+                            Open the Team page to view members grouped by major.
+                        </p>
+                    </div>
+                    <div class="big-cta-actions">
+                        <a class="home-btn" href="team.html" data-i18n-en="Open Team Page" data-i18n-id="Buka Halaman Team">Open Team Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-section ebook" aria-label="eBook section on homepage">
+        <div class="container">
+            <div class="split" data-aos="fade-up">
+                <div>
+                    <header class="home-head" style="text-align: left; margin: 0 0 12px;">
+                        <p class="home-kicker" data-i18n-en="EBOOK" data-i18n-id="EBOOK">EBOOK</p>
+                        <h2 class="home-title" data-i18n-en="Read the IndiGo eBook" data-i18n-id="Baca eBook IndiGo">Read the IndiGo eBook</h2>
+                        <p class="home-sub"
+                            data-i18n-en="This project was created to expand knowledge about India. It covers an overview of India, its geography, places to visit, biographies of important figures, sample tour packages, and famous foods and drinks."
+                            data-i18n-id="Projek ini dibuat dengan tujuan untuk menambah wawasan dan pengetahuan mengenai negara India. Dalam projek ini dibahas gambaran umum India, letak geografis India, tempat-tempat wisata yang dapat dikunjungi, biografi tokoh penting dari India, serta contoh paket wisata dan makanan khas yang ada di India.">
+                            This project was created to expand knowledge about India. It covers an overview of India, its geography, places to visit, biographies of important figures, sample tour packages, and famous foods and drinks.
+                        </p>
+                    </header>
+
+                    <div class="ebook-meta" aria-label="Ebook topics">
+                        <span class="ebook-pill"><i class="fa-solid fa-earth-asia"></i><span data-i18n-en="Geography" data-i18n-id="Geografis">Geography</span></span>
+                        <span class="ebook-pill"><i class="fa-solid fa-landmark"></i><span data-i18n-en="Destinations" data-i18n-id="Destinasi">Destinations</span></span>
+                        <span class="ebook-pill"><i class="fa-solid fa-user-astronaut"></i><span data-i18n-en="People" data-i18n-id="Tokoh">People</span></span>
+                        <span class="ebook-pill"><i class="fa-solid fa-bowl-food"></i><span data-i18n-en="Culinary" data-i18n-id="Kuliner">Culinary</span></span>
+                    </div>
+
+                    <div class="ebook-actions">
+                        <a class="home-btn" href="/assets/ebooks/indigo-ebook.pdf" target="_blank" rel="noopener" data-i18n-en="Open eBook" data-i18n-id="Buka eBook">Open eBook</a>
+                        <a class="home-btn home-btn--ghost" href="/assets/ebooks/indigo-ebook.pdf" download data-i18n-en="Download eBook" data-i18n-id="Unduh eBook">Download eBook</a>
+                    </div>
+                </div>
+
+                <div>
+                    <a class="ebook-cover-link" href="/assets/ebooks/indigo-ebook.pdf" target="_blank" rel="noopener" aria-label="Open eBook">
+                        <img class="ebook-cover" src="/assets/ebooks/cover%20book.jpg" alt="IndiGo eBook cover" loading="lazy" decoding="async">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer site-footer--minimal">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a class="footer-mark" href="index.html" aria-label="IndiGo home">
+                    <span class="footer-mark-main">Indi</span><span class="footer-mark-accent">Go</span>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n-en="© 2026 IndiGo. All rights reserved." data-i18n-id="© 2026 IndiGo. Hak cipta dilindungi.">© 2026 IndiGo. All rights reserved.</p>
+                <p class="footer-credit" data-i18n-en="Designed by SMK Metland" data-i18n-id="Didesain oleh SMK Metland">Designed by SMK Metland</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+    </script>
+</body>
+
+</html>
+

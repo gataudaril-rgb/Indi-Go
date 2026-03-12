@@ -1,0 +1,24 @@
+﻿<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gold emblem">
+  <defs>
+    <linearGradient id="gold" x1="18" y1="14" x2="110" y2="116" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE7A6"/>
+      <stop offset="0.35" stop-color="#F7B733"/>
+      <stop offset="0.7" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#F7B733"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="20" y1="20" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7B733" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#F7B733" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="64" cy="64" r="48" fill="none" stroke="url(#gold)" stroke-width="6"/>
+  <circle cx="64" cy="64" r="38" fill="url(#goldSoft)"/>
+
+  <!-- Minimal crown -->
+  <path d="M44 52 L52 44 L64 54 L76 44 L84 52 L84 60 L44 60 Z" fill="url(#gold)"/>
+
+  <!-- Monogram -->
+  <path d="M43 86 V66 L55 79 L64 70 L73 79 L85 66 V86" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 92 H88" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/>
+</svg>
